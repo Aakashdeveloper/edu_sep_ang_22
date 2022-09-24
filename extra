@@ -1,0 +1,73 @@
+https://code.visualstudio.com/   (install)
+https://github.com/  (SignUp)
+https://git-scm.com/downloads (Install)
+https://nodejs.org/en/ (Install)
+https://github.com/Aakashdeveloper/ (Follow)
+
+
+HTML CSS JAVASCRIPT
+
+NPM
+FullStack Flipcart app
+login logout (jwt)
+Flipcart+login logout
+Template Forms
+Reactive Forms
+Testing
+Multilingual
+Ang Material
+
+Deployment
+> Github
+> Jenkins
+> AWS
+> Heroku
+> Netlify
+> Angular over node server
+> Angular over python server
+> Docker 
+> nginx
+
+Dummy api
+
+>>>>>>>>NO Covered<<<<<>>>>>
+> HTML CSS JAVASCRIPT
+> No Api Building (app,loginlogout)
+
+
+Angular is a frontend framework which help to build
+single page applications using component base structure
+
+> Open Source
+(any body can contribute to development)
+
+
+2,120,729
+/////////JSON////////
+> JavaScript Object Notation
+(Key value pair)
+[
+    {
+        "name:"John",
+        "city":"Helsinki"
+    },
+    {
+        "name:"Ankita",
+        "city":"Paris",
+        "age":20
+    }
+]
+
+//////////
+Package.json
+> First file of the app (entry point of app)
+> Meta Data (details of the applications)(name,version,description)
+> Command (start,build,test)
+> All the packages you use in your app
+
+////Step to generate package.json////
+** NodeJs must be installed in laptop
+> open cmd/terminal and navigate to folder using cd 'path of folder'
+> npm init
+> Answer all the question
+> type "yes"
