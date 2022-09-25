@@ -42,7 +42,6 @@ single page applications using component base structure
 (any body can contribute to development)
 
 
-2,120,729
 /////////JSON////////
 > JavaScript Object Notation
 (Key value pair)
@@ -71,3 +70,75 @@ Package.json
 > npm init
 > Answer all the question
 > type "yes"
+
+
+////Step to install packages////
+** NodeJs must be installed in laptop
+> open cmd/terminal and navigate to folder using cd 'path of folder'
+> npm i packagae name / npm install packagename
+
+
+/// SetUp angular in laptop
+CLI > Command Line Interface  (One time in every laptop)
+
+**** ONE TIME STEP **** 
+# Window
+> open the cmd as adminstrator
+> npm i -g @angular/cli
+
+# Mac/Linux
+> open terminal
+> sudo npm i -g @angular/cli
+
+
+**** Every Time you want new app **** 
+> open cmd/terminal
+> go inside the folder where you want new app
+> ng new appname
+
+////Step to start the app////
+> open cmd/terminal
+> go inside the folder where you have app
+> npm start / ng serve
+
+////Building Block of angular////
+Modules  >> NgModule
+> Parent of the app
+> All the blocks have to be declared here
+
+Component >> Component
+> HTML, CSS, logics
+
+Pipes >> Pipe & PipeTransform
+> Filter the data
+> Run Time Data manuplation
+
+Services >> Injectable
+> Dependency Injction
+> To connet with external source
+
+Routing >> NgModule
+> To Navigate between the pages
+
+/////FLOW OF APP///////
+Package.json > angular.json > main.ts > app.module.ts > app.component.ts
+                    ||
+                    || (compile the into 2-3 Js files)
+                    \/
+                    index.html (Browser will load index.html with compiled JS)
+
+
+/// Folder walkthrough
+Package.json > Entry point and meta Data
+package-lock > it contains your child dependency details
+node_modules > all the packages installed here
+.gitignore > It Help to ignore the content you dont want o push to git
+readme.md> Detail description of the applications
+tsconfig.json > this file help to transpile (convert into JS)
+tsconfig.app.json > this file will have folder & file location which involve in transpile
+Karma > Testing Configuration
+angular.json > This is the second file that run after package.json
+             > Any common css/js
+             > Which is first .ts file and .html is mentioned here
+.editorconfig > It take for code standard among developers
+.browserslistrc > What all browser support we have
