@@ -1,0 +1,2196 @@
+<html>
+
+<head>
+    <!-- one of the important thing, to make site responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+
+    <!-- for icons (cart icon) -->
+    <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Flickity (for slider/carousel) -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="styles/modified-flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="styles/home_page.css">
+    <!-- my js -->
+    <script src="scripts/home_js.js"></script>
+</head>
+
+<body class="no-scroll-y">
+    <!-- ----------------------------------------------------| Header (TOP) start |------------------------------------------------ -->
+    <div class="overlay"></div>
+    <header>
+        <!-- -------------------------------- Website Logo (Flipkart) -------------------------------- -->
+        <div id="logo">
+            <a href="index.html"><img src="res/icons/flipkart.png" alt="flikart"></a>
+            <a href="index.html">Explore
+                <span id="plus">Plus
+                    <img src="res/icons/flipkart-logo-last-part.png" alt="plus">
+                </span>
+            </a>
+        </div>
+        <!-- -------------------------------- search bar -------------------------------- -->
+        <div id="search-bar">
+            <form id="search" action="#">
+                <!-- input field -->
+                <input type="text" name="search-bar" id="search-bar"
+                    placeholder="Search for products, brands, and more">
+                <!-- submit button -->
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+        <!-- --------------------------------- weather of your place ------------------------- -->
+        <div id="weather-box">
+            <p id="weather"></p>
+
+            <div id="weather-icon">
+                <img src="https://openweathermap.org/img/w/01d.png" alt="weather-icon">
+            </div>
+        </div>
+        <!-- the p#weather need to exist before the script is loaded, that's why script for weather is loaded here -->
+        <script src="scripts/weather-script.js"></script>
+        <!-- --------------------------------- dark/light mode ------------------------- -->
+        <div id="light-dark">
+            <!-- <i class="bi bi-moon-stars-fill"></i> -->
+            <!-- <i class="bi bi-cloud-moon-fill"></i> -->
+            <!-- <i class="bi bi-moon-fill"></i> -->
+            <button onclick="toggleNightMode();"><i id="sun-moon" class="bi bi-moon-stars-fill"></i></button>
+            <button onclick="toggleNightMode();"><i id="sun-appear" style="display: none;"
+                    class="bi bi-brightness-high"></i></button>
+        </div>
+        <!-- -------------------------------- Cart Icon -------------------------------- -->
+        <div id="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+        </div>
+        <!-- -------------------------------- more button -------------------------------- -->
+        <div id="more" class="dropdown">
+            <button type="button" class="btn text-center dropdown-toggle" data-bs-toggle="dropdown">
+                More
+            </button>
+            <ul class="dropdown-menu dropdown-menu-center font14">
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-bell-fill"></i>
+                        <p class="drop-icon-text">Notification Preferences</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-inboxes-fill"></i>
+                        <p class="drop-icon-text">Sell on Flipkart</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-question-square-fill"></i>
+                        <p class="drop-icon-text">24x7 Customer Care</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons fa-solid fa-arrow-trend-up"></i>
+                        <p class="drop-icon-text">Advertise</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-download"></i>
+                        <p class="drop-icon-text">Download App</p>
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- -------------------------------- Login button -------------------------------- -->
+        <div id="login" class="dropdown">
+            <button type="button" class="btn text-primary text-center" data-bs-toggle="dropdown">
+                Login
+            </button>
+            <ul class="dropdown-menu dropdown-menu-center font14">
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-person-circle"></i>
+                        <p class="drop-icon-text">My Profile</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-plus-lg"></i>
+                        <p class="drop-icon-text">Flipkart Plus Zone</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-box-arrow-in-up"></i>
+                        <p class="drop-icon-text">Orders</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-suit-heart-fill"></i>
+                        <p class="drop-icon-text">Wishlist</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-hdd-stack-fill"></i>
+                        <p class="drop-icon-text">Rewards</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="drop-icons bi bi-gift"></i>
+                        <p class="drop-icon-text">Gift Cards</p>
+                    </a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <!-- ----------------------------------------------------| Header (TOP) FINISH |------------------------------------------------ -->
+
+
+    <!-- ----------------------------------------------------| Main Content of Page |---------------------------------------------------- -->
+    <div id="main-content">
+
+        <!-- --------------------------- TOP STRIP (icons Level1 : mega-dropdown menus) -------------------------- -->
+        <div id="top-strip">
+            <a href="#">
+                <div id="top_offers" class="icons first-icon">
+                    <img src="res/icons/top-offers.png" alt="top offers" />
+                    <p>Top Offers</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="grocery" class="icons">
+                    <img src="res/icons/grocery.png" alt="grocery" />
+                    <p>Grocery</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="mobiles" class="icons">
+                    <img src="res/icons/mobiles.png" alt="mobiles" />
+                    <p>Mobiles</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="fashion" class="icons">
+                    <img src="res/icons/fashion.png" alt="fashion" />
+
+                    <div class="dropdown mega-dropdown font14">
+                        <button class="btn dropdown-toggle font14" data-bs-toggle="dropdown">
+                            Fashion
+                        </button>
+
+                        <ul class="dropdown-menu mega-dropdown-menu mega-dropdown-menu-left font14">
+                            <!-- 1 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Men's Top Wear</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MEN'S TOP WEAR</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's T-Shirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Casual Shirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Formal Shirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Formal Shirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Kurtas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Ethnic Set</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Blazers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Raincoat</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Windcheaters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Suit</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Fabrics</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Men's Bottom Wear</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MEN'S BOTTOM WEAR</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Jeans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Trousers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Trackpants</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Shorts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Cargos</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Threefourths</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Pyjamas & Loungepants</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Dhoti</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Ethnic Pyjamas</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Women Ethnic</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WOMEN ETHNIC</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Sarees</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Kurtas & Kurtis</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Kurta Sets & Salvar Suits</a></li>
+                                        <li> <a class="dropdown-item" href="#">Ethnic Dresses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Dress Materials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Gowns</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Lehenga Cholis</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Leggings & Patialas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Palazzos & Shararas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Blouse</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Dupatta</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Women Western</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WOMEN WESTERN</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Tops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Dresses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women T-shirts & Polo T-Shirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Jeans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Nighties & Night Dresses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Night Suit</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Track Pants</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Trousers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Jumpsuit</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Shapewear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Sports Bra</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 5 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Men Footwear</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MEN FOOTWEAR</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Sports Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Casual Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Sandals & Floaters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Slippers & Flip Flops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Formal Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Ethnic Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Active Footwear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Combo Footwear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shoe Care</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 6 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Women Footwear</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WOMEN FOOTWEAR</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Flats</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Heals</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Wedges</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Slipper Flip Flops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Casual Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Sports Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Ballerinas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Ethnic Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Sneakers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Walking Shoes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Boots</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 7 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Watches and Accessories</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WATCHES AND ACCESSORIES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men & Women Watches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men & Women Sunglasses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wallets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men & Women Belts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Fashion Jewellery</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men Fashion Jewellery</a></li>
+                                        <li> <a class="dropdown-item" href="#">Precious Jewellery</a></li>
+                                        <li> <a class="dropdown-item" href="#">Precious Coins & Bars</a></li>
+                                        <li> <a class="dropdown-item" href="#">Precious Articles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Frames & Contact Lenses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 8 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Bags, Suitcases & Luggage</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN BAGS, SUITCASES & LUGGAGE</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Backpacks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Suitcases & Trolleys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Dufflebags</a></li>
+                                        <li> <a class="dropdown-item" href="#">Rucksacks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Handbags</a></li>
+                                        <li> <a class="dropdown-item" href="#">Slingbags</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Clutches & Wallets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Messenger Bags</a></li>
+                                        <li> <a class="dropdown-item" href="#">Travel Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Kids</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN KIDS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Girls Dresses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Tshirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Combosets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Ethnic Wear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Jeans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Shorts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Trackpants</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys & Girls Innerwear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Infant Wear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids Slipper Flip Flops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids Sports Shoes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 10 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Essentials</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN ESSENTIALS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Vests</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Boxers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Lingerie Sets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Bra</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Panty</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Sarees</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Kurtas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Kurta Sets & Salwar Suits</a></li>
+                                        <li> <a class="dropdown-item" href="#">Boys Innerwear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Girls Innerwear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Slipper Flip Flops</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 11 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Winter</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WINTER</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Jackets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Sweatshirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Sweaters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Thermals</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Jackets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Sweatshirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Sweaters & Cardigans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Shrugs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids SweatShirts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women Kurtas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids Jackets</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="electronics" class="icons">
+                    <img src="res/icons/electronics.png" alt="electronics" />
+                    <div class="dropdown mega-dropdown font14">
+                        <button class="btn dropdown-toggle font14" data-bs-toggle="dropdown">
+                            Electronics
+                        </button>
+
+                        <ul class="dropdown-menu mega-dropdown-menu mega-dropdown-menu-left font14">
+                            <!-- 1 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Audio</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN AUDIO</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bluetooth Headphones</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wired Headphones</a></li>
+                                        <li> <a class="dropdown-item" href="#">True Wireless Earbuds</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bluetooth Speakers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Soundbars</a></li>
+                                        <li> <a class="dropdown-item" href="#">Home Theaters</a></li>
+                                        <li> <a class="dropdown-item" href="#">TV Streaming Device</a></li>
+                                        <li> <a class="dropdown-item" href="#">Remote Control</a></li>
+                                        <li> <a class="dropdown-item" href="#">DTH Set top Box</a></li>
+                                        <li> <a class="dropdown-item" href="#">Headphones Pouch & Case Covers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Fabrics</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Electronics GST Store</a>
+                                <!-- <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MEN'S BOTTOM WEAR</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Jeans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Trousers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Trackpants</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Shorts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Cargos</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Threefourths</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Pyjamas & Loungepants</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Dhoti</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Ethnic Pyjamas</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Cameras & Accessories</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN CAMERAS & ACCESSORIES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">DSLR & Mirrorless</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sports & Action</a></li>
+                                        <li> <a class="dropdown-item" href="#">Point & Shoot</a></li>
+                                        <li> <a class="dropdown-item" href="#">Instant Cameras</a></li>
+                                        <li> <a class="dropdown-item" href="#">Camcoders</a></li>
+                                        <li> <a class="dropdown-item" href="#">Camera Tripods</a></li>
+                                        <li> <a class="dropdown-item" href="#">Camera Lenses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Drone</a></li>
+                                        <li> <a class="dropdown-item" href="#">Flashes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gimbals</a></li>
+                                        <li> <a class="dropdown-item" href="#">Binoculars</a></li>
+                                        <li> <a class="dropdown-item" href="#">Other Camera Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Computer Peripherals</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN COMPUTER PERIPHERALS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Printers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Monitors</a></li>
+                                        <li> <a class="dropdown-item" href="#">Projectors</a></li>
+                                        <li> <a class="dropdown-item" href="#">Portable Projectors</a></li>
+                                        <li> <a class="dropdown-item" href="#">Toners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Ink Cartridges</a></li>
+                                        <li> <a class="dropdown-item" href="#">Ink Bottles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Receipt Printers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Lamination Machines</a></li>
+                                        <li> <a class="dropdown-item" href="#">Note Counting Machines</a></li>
+                                        <li> <a class="dropdown-item" href="#">Barcode Scanners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Currency Detectors</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 5 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Gaming</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN GAMING</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gaming Consoles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gaming Keyboards</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gamepads</a></li>
+                                        <li> <a class="dropdown-item" href="#">Games</a></li>
+                                        <li> <a class="dropdown-item" href="#">Accessory Kits</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gaming Accessories Combo</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gaming Mousepads</a></li>
+                                        <li> <a class="dropdown-item" href="#">Membership Cards</a></li>
+                                        <li> <a class="dropdown-item" href="#">Controllers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Other Gaming Accessories</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gaming Components</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 6 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Health & Personal Care</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN PERSONAL CARE</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Trimmers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shavers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hair Straighteners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Epilators</a></li>
+                                        <li> <a class="dropdown-item" href="#">Glucometers And Accessories</a></li>
+                                        <li> <a class="dropdown-item" href="#">Blood Pressure Monitors</a></li>
+                                        <li> <a class="dropdown-item" href="#">Digital Thermometers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Weighting Scales</a></li>
+                                        <li> <a class="dropdown-item" href="#">Massagers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Nebulizers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Vaporizers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 7 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Laptop Accessories</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN LAPTOP ACCESSORIES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mouse</a></li>
+                                        <li> <a class="dropdown-item" href="#">Laptop Keyboards</a></li>
+                                        <li> <a class="dropdown-item" href="#">Routers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Data Cards</a></li>
+                                        <li> <a class="dropdown-item" href="#">UPS</a></li>
+                                        <li> <a class="dropdown-item" href="#">USB Gadgets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Security Software</a></li>
+                                        <li> <a class="dropdown-item" href="#">Laptop Battery</a></li>
+                                        <li> <a class="dropdown-item" href="#">Laptop Adapter</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wireless USB Adapter</a></li>
+                                        <li> <a class="dropdown-item" href="#">Processor</a></li>
+                                        <li> <a class="dropdown-item" href="#">Other Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 8 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Laptop and Desktop</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN LAPTOP & DESKTOP</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Laptops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gaming Laptops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Desktop PCs</a></li>
+                                        <li> <a class="dropdown-item" href="#">All in one PCs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mini PCs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Tower PCs</a></li>
+                                        <li> <a class="dropdown-item" href="#">PC Finder</a></li>
+                                        <li> <a class="dropdown-item" href="#">GST Invoice on Laptops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Laptop Buying Guide</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <a href="#" class="dropdown-item">MobileAccessory</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MOBILE ACCESSORY</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Plain Cases</a></li>
+                                        <li> <a class="dropdown-item" href="#">Designer Cases</a></li>
+                                        <li> <a class="dropdown-item" href="#">Screen Guards</a></li>
+                                        <li> <a class="dropdown-item" href="#">Camera Lens Protector</a></li>
+                                        <li> <a class="dropdown-item" href="#">Tablet Accessories</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile Cable</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile Charger</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile Pouches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile Flash</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile Holder</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile USB Gadget</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobiles Accessories Combos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 10 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Powerbank</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN POWER BANK</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Powerbank</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 11 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Smart Home Automation</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN SMART HOME AUTOMATION</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Assistance</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Lights</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Cameras</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Switches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Door Locks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sensors and Alarms</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 12 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Smart Wearables</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN SMART WEARABLES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Watches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Bands</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart Glasses</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 13 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Storage</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN STORAGE</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mobile Memory Card</a></li>
+                                        <li> <a class="dropdown-item" href="#">Computer Storage Pendrive</a></li>
+                                        <li> <a class="dropdown-item" href="#">External Hard Drive</a></li>
+                                        <li> <a class="dropdown-item" href="#">Internal Hard Drive</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 14 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Tablets</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN TABLETS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Tablets With Call Facility</a></li>
+                                        <li> <a class="dropdown-item" href="#">Tablets Without Call Facility</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="home" class="icons">
+                    <img src="res/icons/home.jpg" alt="home" />
+                    <div class="dropdown mega-dropdown font14">
+                        <button class="btn dropdown-toggle font14" data-bs-toggle="dropdown">
+                            Home
+                        </button>
+
+                        <ul class="dropdown-menu mega-dropdown-menu mega-dropdown-menu-left font14">
+                            <!-- 1 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Home Furnishings</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MEN'S HOME FURNISHINGS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bed Linens</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bedsheets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Blankets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Curtains & Accessories</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bath Linen</a></li>
+                                        <li> <a class="dropdown-item" href="#">Floor Coverings</a></li>
+                                        <li> <a class="dropdown-item" href="#">Covers & Protectors</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cushions & Pillows</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kitchen Linen Sets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Table Linen Sets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sofa & curtain Fabrics</a></li>
+                                        <li> <a class="dropdown-item" href="#">Branded Collections</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Living Room</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN LIVING ROOM</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sofas Sets & Sectionals</a></li>
+                                        <li> <a class="dropdown-item" href="#">TV Units</a></li>
+                                        <li> <a class="dropdown-item" href="#">Dining Sets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Coffee Tables</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sofa Beds</a></li>
+                                        <li> <a class="dropdown-item" href="#">Recliners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Living Room Chairs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cabinet & Drawers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bookshelves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shoe Racks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Office Tables</a></li>
+                                        <li> <a class="dropdown-item" href="#">Office Chairs</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Kitchen & Dining</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN KITCHEN & DINING</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cookware</a></li>
+                                        <li> <a class="dropdown-item" href="#">Lunchboxes, Bottles & Flasks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Knives, Choppers & Cutters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gas Stoves & Accessories</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kitchen Tools</a></li>
+                                        <li> <a class="dropdown-item" href="#">Tableware & Dinnerware</a></li>
+                                        <li> <a class="dropdown-item" href="#">Containers & Kitchen Storage</a></li>
+                                        <li> <a class="dropdown-item" href="#">Barware</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bakeware</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hand juicers & Grinders</a></li>
+                                        <li> <a class="dropdown-item" href="#">Disposable Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Outdoor Cooking</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Bedroom room</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN BEDROOM ROOM</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mattresses</a></li>
+                                        <li> <a class="dropdown-item" href="#">Beds</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wardrobes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Side Tables</a></li>
+                                        <li> <a class="dropdown-item" href="#">TV Units</a></li>
+                                        <li> <a class="dropdown-item" href="#">Office Tables</a></li>
+                                        <li> <a class="dropdown-item" href="#">Office Chairs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bookshelves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bar Cabinets</a></li>
+                                        <li> <a class="dropdown-item" href="#">BAr Stools</a></li>
+                                        <li> <a class="dropdown-item" href="#">Rocking Chairs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Benches</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 5 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Home Decor</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN HOME DECOR</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Lightings</a></li>
+                                        <li> <a class="dropdown-item" href="#">Stickers & Wallpapers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Paintings & Posters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Clicks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Showpieces & Decoratives</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wall Decor</a></li>
+                                        <li> <a class="dropdown-item" href="#">Flowers & Vases</a></li>
+                                        <li> <a class="dropdown-item" href="#">Home Fragrances</a></li>
+                                        <li> <a class="dropdown-item" href="#">Windchimes & Dream Catcher</a></li>
+                                        <li> <a class="dropdown-item" href="#">Photo frames & Albums</a></li>
+                                        <li> <a class="dropdown-item" href="#">Diyas, Candles & Holders</a></li>
+                                        <li> <a class="dropdown-item" href="#">Festive & Gifting</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 6 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Tools & Utility</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN TOOLS & UTILITIES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hand Tools</a></li>
+                                        <li> <a class="dropdown-item" href="#">Power Tools</a></li>
+                                        <li> <a class="dropdown-item" href="#">Measuring Tools</a></li>
+                                        <li> <a class="dropdown-item" href="#">Home Storage & Organizers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Umbrellas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Appliance Trolley & Stands</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cloth Dryer Stand</a></li>
+                                        <li> <a class="dropdown-item" href="#">Appliance Filter & Cartridges</a></li>
+                                        <li> <a class="dropdown-item" href="#">Laundary Organization</a></li>
+                                        <li> <a class="dropdown-item" href="#">Lock & Security</a></li>
+                                        <li> <a class="dropdown-item" href="#">Fire & Personal Safety</a></li>
+                                        <li> <a class="dropdown-item" href="#">Paint Supplies & Equipments</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 7 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Lightings & Electrical</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN LIGHTINGS & ELECTRICAL</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bulbs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Emergency Lights</a></li>
+                                        <li> <a class="dropdown-item" href="#">Torches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Tubelights</a></li>
+                                        <li> <a class="dropdown-item" href="#">Extension Cords</a></li>
+                                        <li> <a class="dropdown-item" href="#">Outdoor Lamps</a></li>
+                                        <li> <a class="dropdown-item" href="#">Batteries</a></li>
+                                        <li> <a class="dropdown-item" href="#">Electrical Wire</a></li>
+                                        <li> <a class="dropdown-item" href="#">Electrical Socket</a></li>
+                                        <li> <a class="dropdown-item" href="#">Electrical Door Bell</a></li>
+                                        <li> <a class="dropdown-item" href="#">Solar Lights, Panels & Batteries</a></li>
+                                        <li> <a class="dropdown-item" href="#">Electrical Hardware</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 8 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Space Saving</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN SPACE SAVING</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Portable Laptop Tables</a></li>
+                                        <li> <a class="dropdown-item" href="#">Collapsible Wardrobes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bean Bags & Covers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shoe Racks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cabinet Drawers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Inflatable Sofas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hammock Swings</a></li>
+                                        <li> <a class="dropdown-item" href="#">Home Temples</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bookshelves</a></li>
+                                        <li> <a class="dropdown-item" href="#">TV Mounts</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kitchen Trolley</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kitchen Cabinet</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Cleaning & Bath</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN CLEANING & BATH</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cleaning Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Household Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Air Fresheners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cleaning Gloves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Liquid Detergents</a></li>
+                                        <li> <a class="dropdown-item" href="#">Taps & Faucet</a></li>
+                                        <li> <a class="dropdown-item" href="#">Toothbrush holder</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bathroom Rack & Shelves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shower Heads</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bath & Kitchen Fittings</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bathroom Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 10 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Kids Furniture</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN KIDS FURNITURE</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bunk Beds</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids' Seating</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids' Table</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids' Chairs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids' Sofas</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bookshelves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Chest of Drawers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cupboards</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shoe Racks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Kids' Bean Bags</a></li>
+                                        <li> <a class="dropdown-item" href="#">Portable Pool</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sofa Beds</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 11 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Pet & Gardening</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WINTER</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Plant Seeds</a></li>
+                                        <li> <a class="dropdown-item" href="#">Soil Manure</a></li>
+                                        <li> <a class="dropdown-item" href="#">Pots & Planters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Plant & Planters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Garden Tool Set</a></li>
+                                        <li> <a class="dropdown-item" href="#">Watering Equipments</a></li>
+                                        <li> <a class="dropdown-item" href="#">Dog Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cat Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Fish & Aquatic</a></li>
+                                        <li> <a class="dropdown-item" href="#">Pet Grooming & Hygiene</a></li>
+                                        <li> <a class="dropdown-item" href="#">Pet Toys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Pet Health & Safety</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="appliances" class="icons">
+                    <img src="res/icons/appliances.png" alt="appliances" />
+                    <div class="dropdown mega-dropdown font14">
+                        <button class="btn dropdown-toggle font14" data-bs-toggle="dropdown">
+                            Appliances
+                        </button>
+
+                        <ul class="dropdown-menu mega-dropdown-menu mega-dropdown-menu-left font14">
+                            <!-- 1 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Televisions</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN TELEVISIONS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Sellers</a></li>
+                                        <li> <a class="dropdown-item" href="#">24-32 Inch</a></li>
+                                        <li> <a class="dropdown-item" href="#">40-43 Inch</a></li>
+                                        <li> <a class="dropdown-item" href="#">50-55 Inch</a></li>
+                                        <li> <a class="dropdown-item" href="#">Big Screen TVs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Smart TVs</a></li>
+                                        <li> <a class="dropdown-item" href="#">4K UHD TVs</a></li>
+                                        <li> <a class="dropdown-item" href="#">The Frame</a></li>
+                                        <li> <a class="dropdown-item" href="#">OLED TVs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Nanocell TVs</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Washing Machines</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN WASHING MACHINES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Fully Automatic Front Load</a></li>
+                                        <li> <a class="dropdown-item" href="#">Semi Automatic Top Load</a></li>
+                                        <li> <a class="dropdown-item" href="#">Fully Automatic Top Load</a></li>
+                                        <li> <a class="dropdown-item" href="#">Washers Dryers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Washers Only</a></li>
+                                        <li> <a class="dropdown-item" href="#">Dishwashers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Energy Efficient</a></li>
+                                        <li> <a class="dropdown-item" href="#">Best Sellers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brands</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Air Conditioners</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN AIR CONDITIONERS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Inverter ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Split ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Window ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Energy Efficient ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">5 Star ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Best Sellers</a></li>
+                                        <li> <a class="dropdown-item" href="#">1 Ton ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">1.5 Ton ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wi-fi Enabled</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brands</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Refrigerators</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN REFRIGERATORS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Single Door</a></li>
+                                        <li> <a class="dropdown-item" href="#">Double Door</a></li>
+                                        <li> <a class="dropdown-item" href="#">Triple Door</a></li>
+                                        <li> <a class="dropdown-item" href="#">Side by Side</a></li>
+                                        <li> <a class="dropdown-item" href="#">4 Door</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mini Refrigerators</a></li>
+                                        <li> <a class="dropdown-item" href="#">Convertible</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bottom Mount</a></li>
+                                        <li> <a class="dropdown-item" href="#">Energy Efficient</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 5 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Kitchen Appliances</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN KITCHEN APPLIANCES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Microwave Ovens</a></li>
+                                        <li> <a class="dropdown-item" href="#">Oven Toaster Grills(OTG)</a></li>
+                                        <li> <a class="dropdown-item" href="#">Juicer/Mixer/Grinder</a></li>
+                                        <li> <a class="dropdown-item" href="#">Electric Kettle</a></li>
+                                        <li> <a class="dropdown-item" href="#">Induction Cooktops</a></li>
+                                        <li> <a class="dropdown-item" href="#">Chimneys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Coffee Makers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sandwich Makers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Pop Up Toasters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Electric Cookers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Wet Grinders</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 6 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Home Appliances</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN HOME APPLIANCES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Irons</a></li>
+                                        <li> <a class="dropdown-item" href="#">Water Purifiers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Inverters</a></li>
+                                        <li> <a class="dropdown-item" href="#">Vacuum Cleaners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sewing Machines</a></li>
+                                        <li> <a class="dropdown-item" href="#">Voltage Stabilizers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Air Purifiers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Landline Phones</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 7 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Seasonal Appliances</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN SEASONAL APPLIANCES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">New Launches</a></li>
+                                        <li> <a class="dropdown-item" href="#">Air Coolers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Fans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Water Geysers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Immersion Rods</a></li>
+                                        <li> <a class="dropdown-item" href="#">Room Heater</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 8 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Premium Appliances</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN PREMIUM APPLIANCES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Premium Television</a></li>
+                                        <li> <a class="dropdown-item" href="#">Premium Washing Machines</a></li>
+                                        <li> <a class="dropdown-item" href="#">Side By Side Refrigerators</a></li>
+                                        <li> <a class="dropdown-item" href="#">Vacuum Cleaners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Dishwashers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Premium ACs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Designer Fans</a></li>
+                                        <li> <a class="dropdown-item" href="#">Washer Dryers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Four Door Refrigerators</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Buying Guides</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN BUYING GUIDES</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Televisions</a></li>
+                                        <li> <a class="dropdown-item" href="#">Washing Machines</a></li>
+                                        <li> <a class="dropdown-item" href="#">Refrigerators</a></li>
+                                        <li> <a class="dropdown-item" href="#">Air Conditioners</a></li>
+                                        <li> <a class="dropdown-item" href="#">Water Purifiers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Air Purifiers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Chimneys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Water Geysers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 10 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Flipkart Benefits</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN FLIPKART BENEFITS</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Exchange Offers</a></li>
+                                        <li> <a class="dropdown-item" href="#">No Cost EMI</a></li>
+                                        <li> <a class="dropdown-item" href="#">Extended Warranty</a></li>
+                                        <li> <a class="dropdown-item" href="#">Complete Appliance Protection</a></li>
+                                        <li> <a class="dropdown-item" href="#">Save More on Business Purchase</a></li>
+                                        <li> <a class="dropdown-item" href="#">Appliance Service Plan</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="travel" class="icons">
+                    <img src="res/icons/travel.png" alt="flights" />
+                    <p>Travel</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="beauty" class="icons">
+                    <img src="res/icons/toys.png" alt="toys" />
+                    <div class="dropdown mega-dropdown font14">
+                        <button class="btn dropdown-toggle font14" data-bs-toggle="dropdown">
+                            Beauty, Toys & More
+                        </button>
+
+                        <ul class="dropdown-menu mega-dropdown-menu mega-dropdown-menu-left font14">
+                            <!-- 1 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Beauty & Personal Care</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN BEAUTY & PERSONAL CARE`</li>
+                                        <li> <a class="dropdown-item" href="#">All</a></li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bath & Oral</a></li>
+                                        <li> <a class="dropdown-item" href="#">Personal Hygiene</a></li>
+                                        <li> <a class="dropdown-item" href="#">Eye Makeup</a></li>
+                                        <li> <a class="dropdown-item" href="#">Face Makeup</a></li>
+                                        <li> <a class="dropdown-item" href="#">Lip Makeup</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hair Care</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bath Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Personal Hygiene</a></li>
+                                        <li> <a class="dropdown-item" href="#">Body & Skin Care</a></li>
+                                        <li> <a class="dropdown-item" href="#">Luxury</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Men's Grooming</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN MEN'S GROOMING</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Face Washes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Beard Oils</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hair Styling</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shaving Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Aftershave</a></li>
+                                        <li> <a class="dropdown-item" href="#">Face Creams & Face Packs</a></li>
+                                        <li> <a class="dropdown-item" href="#">Soaps & Bodywashes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Men's Grooming Combos</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sexual Wellness</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Food & Drinks</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN FOOD & DRINKS</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Beverages</a></li>
+                                        <li> <a class="dropdown-item" href="#">Nuts & Dry Fruits</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cooking Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Breakfast Items</a></li>
+                                        <li> <a class="dropdown-item" href="#">Snacks Corner</a></li>
+                                        <li> <a class="dropdown-item" href="#">Jams, Spreads & Honey</a></li>
+                                        <li> <a class="dropdown-item" href="#">Ready to Cook & Eat</a></li>
+                                        <li> <a class="dropdown-item" href="#">Chocolates</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baking Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sweets Store</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Nutrition & Health Care</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN NUTRITION & HEALTH CARE</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Masks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Ayurvedic Supplements</a></li>
+                                        <li> <a class="dropdown-item" href="#">Health Drinks</a></li>
+                                        <li> <a class="dropdown-item" href="#">Vitamin Supplements</a></li>
+                                        <li> <a class="dropdown-item" href="#">Protein Supplements</a></li>
+                                        <li> <a class="dropdown-item" href="#">Women's Safety</a></li>
+                                        <li> <a class="dropdown-item" href="#">Home Medicines</a></li>
+                                        <li> <a class="dropdown-item" href="#">Home Medical Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Healthcare Comos</a></li>
+                                        <li> <a class="dropdown-item" href="#">Professional Medical Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 5 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Baby Care</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN BABY CARE</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Diapers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Wipes</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Bath & Grooming</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Gift Sets & Combo</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Medical & Healthcare</a></li>
+                                        <li> <a class="dropdown-item" href="#">Nursing & Breast Feeding</a></li>
+                                        <li> <a class="dropdown-item" href="#">Feeding Bottles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Food</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Gear</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 6 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Toys & School Supplies</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN TOYS & SCHOOL SUPPLIES</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Remote Control Toys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Soft Toys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Puzzles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Board Games</a></li>
+                                        <li> <a class="dropdown-item" href="#">Learning & Educational Toys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cars & Die Cast Vehicles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Baby Toys</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gifting Toys</a></li>
+                                        <li> <a class="dropdown-item" href="#">School Bags & Backpacks</a></li>
+                                        <li> <a class="dropdown-item" href="#">School Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 7 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Sports & Fitness</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN SPORTS & FITNESS</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Badminton</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cricket</a></li>
+                                        <li> <a class="dropdown-item" href="#">Cycling</a></li>
+                                        <li> <a class="dropdown-item" href="#">Football</a></li>
+                                        <li> <a class="dropdown-item" href="#">Fitness Equipments</a></li>
+                                        <li> <a class="dropdown-item" href="#">Support</a></li>
+                                        <li> <a class="dropdown-item" href="#">Shakers & Sippers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gym Gloves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Dumbbells</a></li>
+                                        <li> <a class="dropdown-item" href="#">Yoga</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 8 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Books & Music</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN BOOKS & MUSIC</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Test Prep</a></li>
+                                        <li> <a class="dropdown-item" href="#">Academic</a></li>
+                                        <li> <a class="dropdown-item" href="#">Literature & Fiction</a></li>
+                                        <li> <a class="dropdown-item" href="#">Non Fiction</a></li>
+                                        <li> <a class="dropdown-item" href="#">Young Readers</a></li>
+                                        <li> <a class="dropdown-item" href="#">E-Learning</a></li>
+                                        <li> <a class="dropdown-item" href="#">Indian Languages</a></li>
+                                        <li> <a class="dropdown-item" href="#">Acoustic Guitars</a></li>
+                                        <li> <a class="dropdown-item" href="#">Musical Keyboards</a></li>
+                                        <li> <a class="dropdown-item" href="#">Microphones</a></li>
+                                        <li> <a class="dropdown-item" href="#">Stage Equipments & Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 9 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Stationary & Office Supplies</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN STATIONARY & OFFICE SUPPLIES</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Pens & Gift Sets</a></li>
+                                        <li> <a class="dropdown-item" href="#">Notebooks & Dairies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Art Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Calculators</a></li>
+                                        <li> <a class="dropdown-item" href="#">Keychains</a></li>
+                                        <li> <a class="dropdown-item" href="#">Card Holders</a></li>
+                                        <li> <a class="dropdown-item" href="#">Desk Organizers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Office Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Office Equipments</a></li>
+                                        <li> <a class="dropdown-item" href="#">Party Supplies</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 10 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Auto Accessories</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN AUTO ACCESSORIES</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Bike Essentials</a></li>
+                                        <li> <a class="dropdown-item" href="#">Car & Bike Covers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Car Air Freshener</a></li>
+                                        <li> <a class="dropdown-item" href="#">Car Bluetooth Device</a></li>
+                                        <li> <a class="dropdown-item" href="#">Car Lubricant</a></li>
+                                        <li> <a class="dropdown-item" href="#">Car Vacuum Cleaner</a></li>
+                                        <li> <a class="dropdown-item" href="#">Car Media Player</a></li>
+                                        <li> <a class="dropdown-item" href="#">Helmet</a></li>
+                                        <li> <a class="dropdown-item" href="#">Vehicle Washing & Cleaning Products</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#">Tyres</a></li>
+                                        <li> <a class="dropdown-item" href="#">Top Brand Deals</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- 11 -->
+                            <li>
+                                <a href="#" class="dropdown-item">Safety & Hygiene Essentials</a>
+                                <div class="mega-dropdown-submenu">
+                                    <ul class="no-bullet">
+                                        <li class="dropdown-text-enhancement">MORE IN SAFETY & HYGIENE ESSENTIALS</li>
+                                        <li> <a class="dropdown-item" href="#">View All</a></li>
+                                        <li> <a class="dropdown-item" href="#">Mask</a></li>
+                                        <li> <a class="dropdown-item" href="#">Sanitizers</a></li>
+                                        <li> <a class="dropdown-item" href="#">Gloves</a></li>
+                                        <li> <a class="dropdown-item" href="#">Hand Wash</a></li>
+                                        <li> <a class="dropdown-item" href="#">PPE Kits</a></li>
+                                        <li> <a class="dropdown-item" href="#">Face Shields</a></li>
+                                        <li> <a class="dropdown-item" href="#">UV Sterilizer Box</a></li>
+                                        <li> <a class="dropdown-item" href="#">Safety Goggles</a></li>
+                                        <li> <a class="dropdown-item" href="#">Vitamins for immunity</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- ---------------------------------------------------- TOP STRIP FINISH ---------------------------------------------------- -->
+
+        <!-- coupon -->
+
+        <div class="card coupon">
+            <button class="btn coupon-btn" onclick="closeCoupon()"><i class="bi bi-x-circle-fill"></i></button>
+            <img class="card-img-top" src="res/coupon2.png" alt="coupon" />
+            <div class="card-body coupon-body-enhancements">
+                <span class="card-title fs-5">Coupon Code: </span>
+                <span class="card-body fs-5">FREE50OFF</span>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------| image carousel start ---------------------------------------------------- -->
+
+        <div id="image-slider" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#image-slider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#image-slider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#image-slider" data-bs-slide-to="2"></button>
+            </div> -->
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="res/carousel-imgs/redmi10.jpg" alt="Redmi 10" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="res/carousel-imgs/oppo-k10.jpg" alt="Oppo K10" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="res/carousel-imgs/samsung-f23.jpg" alt="Samsung F23" class="d-block" style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev img-slider-prev-control" type="button" data-bs-target="#image-slider"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next img-slider-next-control" type="button" data-bs-target="#image-slider"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- carousel finish -->
+        
+        <!-- ----------------------------------------------------| Cards  container / holder divs start |---------------------------------------------------- -->
+        <!-- --------------------------------- holder 1 ---------------------------------- -->
+        <div id="deals-of-day" class="cards-holder container-fluid">
+            <h3 class="cards-heading">Deals of the Day</h3>
+            <a href="#" class="btn btn-primary btn-right">View All</a>
+            <hr />
+            <div class="items-strip carousel" data-flickity='{"groupCells": true }'>
+                <!-- myCard 1 -->
+                <a href="htmls/helmets.html">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/helmet_1.jpg" alt="sports bike" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Car and bike accessories</p>
+                            <p class="price">From &#8377;49</p>
+                            <p class="brief">Top Selling</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 2 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/heating_and_cooling.jpeg" alt="table fan" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Heating & Cooling Applia...</p>
+                            <p class="price">Upto 40% Off</p>
+                            <p class="brief">Symphony, Bajaj & More</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 3 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/bed_linen_and_blanket.jpeg" alt="bed sheet" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Bed Linen & Blanket</p>
+                            <p class="price">Upto 75% Off</p>
+                            <p class="brief">Bedsheets, Mosquito Net...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 4 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/best_of_brands.jpeg" alt="man in t-shirt" />
+                        </div>
+
+                        <div class="content carousel-cell card-text">
+                            <p>Best Of Brands!</p>
+                            <p class="price">Min 50% Off</p>
+                            <p class="brief">Men's Clothing</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 5 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/watch.jpeg" alt="watch" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Casio, Fossil, Titan...</p>
+                            <p class="price">10-50% Off + Extra 5%</p>
+                            <p class="brief">New Arrivals with Amazi...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 6 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/pillow.jpg" alt="pillows" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Cushions & Pillows</p>
+                            <p class="price">From &#8377;129</p>
+                            <p class="brief">Grab or Gone..!!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 7 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/gardening-essentials.jpeg"
+                                alt="gardening essentials" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Gardening Essentials</p>
+                            <p class="price">Min 50% + Extra 10 % Off</p>
+                            <p class="brief">Mind Blowing Discounts</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ---------------------------------- holder 2 ---------------------------------- -->
+        <div id="most_searched" class="cards-holder container-fluid">
+            <h3 class="cards-heading">Most Searched</h3>
+            <a href="#" class="btn btn-primary btn-right">View All</a>
+            <hr />
+            <div class="items-strip carousel" data-flickity='{"groupCells": true }'>
+                <!-- myCard 1 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/laptop.jpeg" alt="Laptop" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Lenovo IdeaPad D330</p>
+                            <p class="price">Just &#8377;22,900</p>
+                            <p class="brief">Grab or Gone..!!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 2 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/webcam.jpeg" alt="Webcam" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Webcams</p>
+                            <p class="price">From &#8377;490</p>
+                            <p class="brief">Logitech, Quantum & more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 3 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/mouse.jpeg" alt="Mouse" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Mouse</p>
+                            <p class="price">From &#8377;179</p>
+                            <p class="brief">Logitech, HP, Dell & more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 4 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/data_cards.jpeg" alt="Data myCard" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Data myCards</p>
+                            <p class="price">Upto 60% Off</p>
+                            <p class="brief">JioFi, Huawei & more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 5 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/cooling_pads.jpeg" alt="cooling pad" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Cooling Pads</p>
+                            <p class="price">Upto 80% Off</p>
+                            <p class="brief">Tarkan, Flipkart SmartBuy...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 6 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/trimmer2.jpg" alt="trimmer" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Best Deals on Trimmers</p>
+                            <p class="price">From &#8377;895</p>
+                            <p class="brief">By Philips</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 7 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/routers.jpg" alt="routers" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Routers</p>
+                            <p class="price">From &#8377;799</p>
+                            <p class="brief">MI, Netgear, TP-link & m...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 8 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/keyboard_skins.jpeg" alt="Keyboard Skins" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Keyboard skins</p>
+                            <p class="price">Upto 75% Off</p>
+                            <p class="brief">Saco, Flipkart, SmartBuy...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ---------------------------------- holder 3 ---------------------------------- -->
+        <div id="top_deals_on_fashion" class="cards-holder container-fluid">
+            <h3 class="cards-heading">Top Deals on Fashion</h3>
+            <a href="#" class="btn btn-primary btn-right">View All</a>
+            <hr />
+            <div class="items-strip carousel" data-flickity='{"groupCells": true}'>
+                <!-- myCard 1 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/popular_cargos.jpg" alt="Popular Cargos" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Popular Cargos</p>
+                            <p class="price">From &#8377;599</p>
+                            <p class="brief">Saco, Flipkart, SmartBuy...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 2 -->
+                <a href="#">
+                    <div class="myCard  carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/bagpacks.jpeg" alt="bagpacks" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>BagPacks</p>
+                            <p class="price">Under &#8377;799</p>
+                            <p class="brief">Top Offers</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 3 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/sandles.jpeg" alt="sandles" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Woodland, Red Tape, Red...</p>
+                            <p class="price">Upto 60% Off</p>
+                            <p class="brief">Men's Casual Shoes, San...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 4 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/puma.jpeg" alt="shoes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Puma, Fila & more</p>
+                            <p class="price">Min 30% Off</p>
+                            <p class="brief">Men's casual shoes, San...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 5 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/sparx.jpeg" alt="shoes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Min 30% Off</p>
+                            <p class="price">Min 30% Off</p>
+                            <p class="brief">Men's casual shoes, San...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 6 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/safari.jpeg" alt="skybag" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Safari, Skybags & more</p>
+                            <p class="price">From &#8377;999</p>
+                            <p class="brief">BagPacks</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 7 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/skatchite.jpeg" alt="shoes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Scatchite, Bersache...</p>
+                            <p class="price">Under &#8377;599</p>
+                            <p class="brief">Shoes</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 8 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/sparx2.jpeg" alt="shoes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Sparx, Birde & more</p>
+                            <p class="price">Under 299</p>
+                            <p class="brief">Shoes, Comfortable</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 9 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/birde-shoes.jpeg" alt="shoes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Sparx, Birde & more</p>
+                            <p class="price">From &#8377;999+Extra 10%Off</p>
+                            <p class="brief">Men's casual shoes and m...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 10 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/shoes22.jpeg" alt="shoes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>FCUK, Ducati & more</p>
+                            <p class="price">50-80 % + Extra 5% Off</p>
+                            <p class="brief">Men's casual footwear</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ---------------------------------- holder 4 ---------------------------------- -->
+        <div id="home_makeover" class="cards-holder container-fluid">
+            <h3 class="cards-heading">Home Makeover</h3>
+            <a href="#" class="btn btn-primary btn-right">View All</a>
+            <hr />
+            <div class="items-strip carousel" data-flickity='{"groupCells": true}'>
+                <!-- myCard 1 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/temple.jpeg" alt="home temple wooden" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Home Temples</p>
+                            <p class="price">From &#8377;399</p>
+                            <p class="brief">Trendy Collection</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 2 -->
+                <a href="#">
+                    <div class="myCard  carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/kettle.jpeg" alt="kettle" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Electric Kettles</p>
+                            <p class="price">From &#8377;375</p>
+                            <p class="brief">Havells, Philips, and more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 3 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/shoe racks.jpeg" alt="shoe racks" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Shoe Racks</p>
+                            <p class="price">From &#8377;149</p>
+                            <p class="brief">Nilkamal, Ebee & more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 4 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/induction.jpeg" alt="induction" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Induction Cooktops</p>
+                            <p class="price">Upto 60% Off</p>
+                            <p class="brief">Prestige, Philips and more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 5 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/egg-cookers.jpeg" alt="egg cookers" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Egg Cookers</p>
+                            <p class="price">From &#8377;299</p>
+                            <p class="brief">Nova, Kent and more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 6 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/shoe-racks.jpeg" alt="shoe racks" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Shoe Racks</p>
+                            <p class="price">From &#8377;249</p>
+                            <p class="brief">Trendy Collections Made...</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 7 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/sewing-machine.jpeg" alt="sewing machines" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Sewing Machines</p>
+                            <p class="price">Shop Now!</p>
+                            <p class="brief">Usha, Singer & more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 8 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/hand-blenders.jpeg" alt="hand blenders" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Hand Blenders</p>
+                            <p class="price">From &#8377;149</p>
+                            <p class="brief">Boss, Orpat & more</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 9 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/wardrobes.jpeg" alt="wardrobes" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Wardrobes</p>
+                            <p class="price">From &#8377;6,999</p>
+                            <p class="brief">Go Local Furniture</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 10 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/dining-sets.jpeg" alt="dining sets" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Dining Sets</p>
+                            <p class="price">From &#8377;10,999</p>
+                            <p class="brief">Top Made in India Brands</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- ---------------------------------- holder 5 ---------------------------------- -->
+        <div id="trending_offers" class="cards-holder container-fluid">
+            <h3 class="cards-heading">Home Makeover</h3>
+            <a href="#" class="btn btn-primary btn-right">View All</a>
+            <hr />
+            <div class="items-strip carousel" data-flickity='{"groupCells": true}'>
+                <!-- myCard 1 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/tshirt.jpeg" alt="tshirt" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Men's shirt & Trouser F...</p>
+                            <p class="price">Top Offers</p>
+                            <p class="brief">Great Savings</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 2 -->
+                <a href="#">
+                    <div class="myCard  carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/mobile-stickers.jpeg"
+                                alt="mobile skin stickers" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Mobile Skin Stickers</p>
+                            <p class="price">Extra 5% Off</p>
+                            <p class="brief">Shop Now!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 3 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/smart_watches2.jpeg" alt="smart Watches" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Smart Watches screenguar...</p>
+                            <p class="price">Special Offers</p>
+                            <p class="brief">Grab Now!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 4 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/headphones.jpeg" alt="headphones" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Headphones</p>
+                            <p class="price">Extra 5% Off</p>
+                            <p class="brief">Explore Now</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 5 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/sunglasses.jpeg" alt="sunglasses" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Sunglasses</p>
+                            <p class="price">Extra 5% Off</p>
+                            <p class="brief">Hurry, Don't Miss Out!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 6 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/watches2.jpeg" alt="watches" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Wrist Watches</p>
+                            <p class="price">Extra 15% Off</p>
+                            <p class="brief">Hurry, Don't Miss Out!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 7 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/women_sarees.jpeg" alt="women sarees" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Women Sarees</p>
+                            <p class="price">Top Offers</p>
+                            <p class="brief">Buy Now!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 8 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/deodrants2.jpeg" alt="deodrants" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Deodorants</p>
+                            <p class="price">Best Deals</p>
+                            <p class="brief">Grab Now</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 9 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/flashlight.jpeg" alt="flashlights" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Flashlights</p>
+                            <p class="price">Min 50% Off</p>
+                            <p class="brief">Discover Now!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- myCard 10 -->
+                <a href="#">
+                    <div class="myCard carousel-cell card">
+                        <div class="img">
+                            <img class="card-img-top" src="res/strips-icons/glasses.jpeg" alt="glasses" />
+                        </div>
+
+                        <div class="content card-text">
+                            <p>Royal Son</p>
+                            <p class="price">Under &#8377;599</p>
+                            <p class="brief">#Love What You Wear</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lower_links"></div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="footer-headings">ABOUT</p>
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Flipkart Wholesale</a>
+                    <a href="#">Cooperate Information</a>
+                </div>
+                <div class="col">
+                    <p class="footer-headings">HELP</p>
+                    <a href="#">Payment</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Report Infringement</a>
+                </div>
+                <div class="col">
+                    <p class="footer-headings">POLICY</p>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
+                <div class="col">
+                    <p class="footer-headings">SOCIAL</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+                <div class="col normal-line-height">
+                    <p class="footer-headings">Mail Us:</p>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, </p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                </div>
+                <div class="col normal-line-height">
+                    <p class="footer-headings">Registered Office Address:</p>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buldings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road,</p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid last-row">
+            <i class="icon bi bi-bag-fill"></i><span class="icon-text">Sell On Flipkart</span>
+            <i class="icon margin-l bi bi-star"></i><span class="icon-text">Advertise</span>
+            <i class="icon margin-l bi bi-gift"></i><span class="icon-text">Gift Cards</span>
+            <i class="icon margin-l bi bi-question-circle-fill"></i><span class="icon-text">Help Center</span>
+            <span class="margin-l icon-text">&copy; 2007-2022 Flipkart.com</span>
+            <!-- <span class="icon-imgs">
+                <img src="res/icons/cards/visa.jpg" alt="visa">
+                <img src="res/icons/cards/card2.png" alt="card2">
+                <img src="res/icons/cards/card3.png" alt="card3">
+                <img src="res/icons/cards/card4.png" alt="card4">
+                <img src="res/icons/cards/card5.png" alt="card5">
+                <img src="res/icons/cards/card6.png" alt="card6">
+                <img src="res/icons/cards/card7.png" alt="card7">
+                <img src="res/icons/cards/card8.png" alt="card8">
+                <img src="res/icons/cards/card9.png" alt="card9">
+                <img src="res/icons/cards/card10.png" alt="card10">
+            </span> -->
+            <span class="all-cards">
+                <img src="res/icons/cards/all-cards.png" alt="all cards">
+            </span>
+        </div>
+        <div class="text-center icon-text copyright-protected"><a href="https://github.com/suraj-singh12"
+                target="_blank">&copy; suraj-singh12 (Suraj Singh)</a></div>
+    </footer>
+
+</body>
+
+</html>

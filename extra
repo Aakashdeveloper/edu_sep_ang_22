@@ -142,3 +142,51 @@ angular.json > This is the second file that run after package.json
              > Which is first .ts file and .html is mentioned here
 .editorconfig > It take for code standard among developers
 .browserslistrc > What all browser support we have
+
+
+ng g c componentname
+
+
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+"node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+
+API
+
+Page1
+# Top strip > https://devflipapi.herokuapp.com/topstrip
+# Cloths >  https://devflipapi.herokuapp.com/item/cloths?limit=5
+# Mobiles > https://devflipapi.herokuapp.com/item/mobile?limit=5
+# Watches > https://devflipapi.herokuapp.com/item/watches?limit=5
+# Formals > https://devflipapi.herokuapp.com/item/formals?limit=5
+
+Page 2(Listing)
+# List of item on basis of category
+# Cloths > https://devflipapi.herokuapp.com/item/cloths
+# Mobiles > https://devflipapi.herokuapp.com/item/mobile
+# Filter on Basis of Cost
+> https://devflipapi.herokuapp.com/filter/price/bags?lcost=50&hcost=500
+# Filter on Basis of StarRating
+> https://devflipapi.herokuapp.com/filter/rating/cloths/4
+
+Page3 (Details)
+> https://devflipapi.herokuapp.com/item/cloths?itemId=12
+
+
+
+One Way
+> Data Binding {{}}
+> Property Binding []
+> Event Binding ()
+Two Way
+> Two Way binding [()]
+
+
+
+let a = 10
+let b = "Hii"
+let c = true
+
+int a = 10
+str b = "hii"
+bool c = true

@@ -1,0 +1,31 @@
+/* deal */
+.deal{
+    height:400px;
+    width:98%;
+    margin:1%;
+    box-shadow: 6px 9px 10px gray;
+}
+.dealItem{
+    height:300px;
+    width:220px;
+    background-color:hotpink;
+    margin-left:4%;
+    float: left;
+}
+.card{
+    height:250px;
+    width:200px;
+    padding:10px;
+    text-align:center;
+}
+.card > img {
+    height:170px;
+}
+.mobileImg{
+    height:150px;
+    margin-left: 25%;
+    width:100px !important;
+}
+.card span{
+    color: green
+}

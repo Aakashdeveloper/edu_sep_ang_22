@@ -1,0 +1,1115 @@
+<html>
+
+<head>
+    <!-- one of the important thing, to make site responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+
+    <!-- for icons (cart icon) -->
+    <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Flickity (for slider/carousel) -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="modified-flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- my css -->
+    <!-- <link rel="stylesheet" href="helmets.css"> -->
+    <link rel="stylesheet" href="../styles/common23.css">
+    <link rel="stylesheet" href="../styles/details_page.css">
+</head>
+
+<body>
+    <!-- ----------------------------------------------------| Header (TOP) start |------------------------------------------------ -->
+
+    <header>
+        <!-- -------------------------------- Website Logo (Flipkart) -------------------------------- -->
+        <div id="logo">
+            <a href="index.html"><img src="../res/icons/flipkart.png" alt="flikart"></a>
+            <a href="index.html">Explore
+                <span id="plus">Plus
+                    <img src="../res/icons/flipkart-logo-last-part.png" alt="plus">
+                </span>
+            </a>
+        </div>
+        <!-- -------------------------------- search bar -------------------------------- -->
+        <div id="search-bar">
+            <form id="search" action="#">
+                <!-- input field -->
+                <input type="text" name="search-bar" id="search-bar"
+                    placeholder="Search for products, brands, and more">
+                <!-- submit button -->
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+        <!-- -------------------------------- Cart Icon -------------------------------- -->
+        <div id="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+        </div>
+        <!-- -------------------------------- more button -------------------------------- -->
+        <div id="more" class="dropdown hover-dropdown-small">
+            <button type="button" class="btn text-center dropdown-toggle">
+                More
+            </button>
+            <ul class="dropdown-menu dropdown-menu-small dropdown-menu-center font14">
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-bell-fill"></i>
+                        <p class="dropdown-menu-small-text">Notification Preferences</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-inboxes-fill"></i>
+                        <p class="dropdown-menu-small-text">Sell on Flipkart</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-question-square-fill"></i>
+                        <p class="dropdown-menu-small-text">24x7 Customer Care</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons fa-solid fa-arrow-trend-up"></i>
+                        <p class="dropdown-menu-small-text">Advertise</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-download"></i>
+                        <p class="dropdown-menu-small-text">Download App</p>
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- -------------------------------- Login button -------------------------------- -->
+        <div id="login" class="dropdown hover-dropdown-small">
+            <button type="button" class="btn text-primary text-center">
+                Login
+            </button>
+            <ul class="dropdown-menu dropdown-menu-small dropdown-menu-center font14">
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-person-circle"></i>
+                        <p class="dropdown-menu-small-text">My Profile</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-plus-lg"></i>
+                        <p class="dropdown-menu-small-text">Flipkart Plus Zone</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-box-arrow-in-up"></i>
+                        <p class="dropdown-menu-small-text">Orders</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-suit-heart-fill"></i>
+                        <p class="dropdown-menu-small-text">Wishlist</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-hdd-stack-fill"></i>
+                        <p class="dropdown-menu-small-text">Rewards</p>
+                    </a></li>
+                <li><a class="dropdown-item" href="#"><i class="dropdown-menu-small-icons bi bi-gift"></i>
+                        <p class="dropdown-menu-small-text">Gift Cards</p>
+                    </a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ----------------------------------------------------| Header (TOP) FINISH |------------------------------------------------ -->
+
+    <!-- ----------------------------------------------------| Main Content of Page |---------------------------------------------------- -->
+    
+    <div id="main-content text-center container-fluid">
+        <div class="top-strip2">
+            <!-- mega dropdown start -->
+            <!-- button1 (Electronics) -->
+            <div class="dropdown mega-menu" id="button1">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Electronics
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Mobiles<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mi</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Realme</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Samsung</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Infinix</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">OPPO</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Apple</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Vivo</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Honor</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Asus</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Poco X2</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">realme Narzo 10</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Infinix Hot 9</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">IQOO 3</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Iphone SE</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Motorola razr</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Realme Narzo 10A</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Motorola g8 Power lite</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Mobile Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mobile Cases</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Headphones & Headsets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Powerbanks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Screen Guards</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Memory Cards</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Headphones</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mobile Cables</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mobile Chargers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mobile Holders</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart Wearable Tech<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Watches</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Glasses (VR)</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Bands</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Health Care Applications<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bp Monitors</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Weighting Scale</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Laptops<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Gaming Laptops</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Desktop PCs<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Gaming & Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Computer Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">External Hard Disks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pendrives</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Laptop Skins & Decals</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Laptop Bags</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mouse</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Computer Peripherals<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Printers & Ink Cartridges</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Monitors</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Tablets<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Apple iPads</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Television</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Speakers<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Home Audio Speakers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Home Theatres</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">SoundBars</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bluetooth Speakers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">DTH Set Top Box</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart Home Automation<i class="bi bi-caret-right-fill"></i></strong>></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Google Next</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Camera<i class="bi bi-caret-right-fill"></i></strong>></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">DSLR & Mirrorless</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Compact & Bridge Cameras</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sports & Action</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Camera Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lens</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Tripods</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Network Components<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Routers</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Featured<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Google Assistant Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Laptops on Buyback Guarantee</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Flipkart Smartbuy</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Li-Polymer Power Banks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sony PS4 Pro & Slim</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Apple Products</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Microsoft Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lenovo Phab Series</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">JBL Speakers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smartphones on Buyback Guarantee</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Phillips</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dr. Morepen</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Complete Mobile Protection</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mobiles No Cost EMI</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Huawei Watch Gt 2e Smart Watch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button2 (TVs & Appliances) -->
+            <div class="dropdown mega-menu" id="button2">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                TVs & Appliances
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Televisions<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>New Launches<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart & Ultra HD<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Top Brands<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mi</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Vu</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Thomson</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Samsung</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">iFFALCON by TCL</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Nokia</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">LG</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">realme</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Motorola</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Shop by Screen Size<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">24 & below</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">28 - 32</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">39 - 43</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">48 - 55</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">60 & Above</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Washing Machine<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fully Automatic Front Load</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Semi Automatic Top Load</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fully Automatic Top Load</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Air Conditioners<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Inverted AC</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Split ACs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Window ACs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Shop By Brand<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">LG</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Hitachi</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Carrier</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Refrigerators<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Single Door</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Double Door</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Triple Door</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Side by Side</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Convertible</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Kitchen Appliances<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Microwave Ovens</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Oven Toaster Grills(OTG)</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Juicer/Mixer/Grinder</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Electric Kettle</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Induction Cooktops</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Chimneys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Hand Blenders</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sandwich Makers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pop Up Toasters</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Electric Cookers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wet Grinders</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Food Processors</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Coffee Makers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dishwashers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Healthy Living Appliances<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Small Home Appliances<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Irons</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Water Purifiers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fans</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Air Coolers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bluetooth Speakers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Inverters</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Vacuum cleaners</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sewing Machines</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Voltage Stabilizers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Water Geysers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Immersion Rods</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Top Brands<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Livpure</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Philips</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bajaj</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">IFB</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Edureka Forbes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kaff</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Buying Guides<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Televisions</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Washing Machines</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Refrigerators</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Air Conditioners</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Water Purifiers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Air Purifiers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Chimneys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Water Geysers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>New Launches<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Coocaa Smart TVs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Nokia (55) 4K Android TV</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">MI (32) 4A Pro Android TV</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">MarQ (43) FHD SMart TV</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">LG Refrigerators</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Thomson (40) 4K Smart TV</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Whirlpool Refrigerators</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kodak (22) | (32) LED TVs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button3 (Men) -->
+            <div class="dropdown mega-menu" id="button3">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Men
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Footwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sports Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Casual Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Formal Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sandals & FLoaters</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Flip-Flops</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Loafers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Boots</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Running Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sneakers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Men's Grooming<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Deodorants</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Perfumes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Beard Care & Grooming</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shaving & Aftershave</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sexual Wellness</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Clothing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Top Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">T-shirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Formal Shirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Casual Shirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Bottom wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Jeans</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Casual Trousers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Formal Trousers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Track Pants</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cargos</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Three Fourths</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Suits, Blazers & Waistcoats<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Ties, Socks, Caps & More<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Fabrics<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Winter Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sweatshirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Jackets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sweater</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Tracksuits</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Ethnic wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kurta</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ethnic Sets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sherwanis</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ethnic Pyjama</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dhoti</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lungi</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Innerwear & Loungewear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Briefs & Trunks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Vests</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Boxers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pyjamas and Lounge Pants</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Thermals</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Night Suits</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Raincoats & Windcheaters<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Watches<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fastrack</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Casio</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Titan</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fossil</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sonata</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Backpacks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wallets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Belts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sunglasses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Luggage & Travel</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Frames</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Jewellery</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Sports & Fitness Store<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart Watches<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart Bands<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Personal Care Appliances<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Trimmers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shavers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Grooming kits</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Featured<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Watches Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Footwear Club</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bags & Wallet</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">T-Shirt Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Adidas</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Beardo</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Reebok</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sketchers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Nike</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button4 (Women) -->
+            <div class="dropdown mega-menu" id="button4">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Women
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Women Western Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Top wear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dresses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Jeans</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sports</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Skirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Jeggings & Tights</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Trousers & Capirs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Lingerie & Sleepwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Brass</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Panties</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lingerie Sets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Night Dresses & Nighties</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shapewear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Camisoles & Slips</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Swim & Beachwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Party Dresses<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Sports Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Winter Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Ethnic Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sarees</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kurtas & Kurtis</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dress Material</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lehenga Choli</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Blouse</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kurta Sets & Salwar Suits</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">gowns</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dupattas</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Ethnic Bottoms<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Leggings & Churidars</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Palazzos</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shararas</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Salwars & Patiala</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dhoti Pants</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ethnic Trousers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Saree Shapewear & Petticoats</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Footwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Sandals<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Flats</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Heels</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wedges</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Shoes<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sports Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Casual Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Boots</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Ballerinas<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Slippers & Flip-flops<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Watches<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart Watches<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Personal Care Appliances<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Hair Straighteners</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Hair Dryers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Epilators</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Beauty & Grooming<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Make UP</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Skin Care</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Hair Care</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bath & Spa</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Deodorants & Perfumes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Jewellery<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Artificial Jewellery</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Silver Jewellery</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Coins & Bars</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Handbags</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shoulder Bags</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Totes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sling Bags</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Clutches</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wallets & Belts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Luggage & Travel</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sunglasses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Frames</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Featured<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Forever 21</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Accessories</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">W</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pantaloons</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Chemistry</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lakme</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Nivea</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Catwalk</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Titan-Raga</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fastrack</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Divastri</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Rare Roots</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Anmi</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Coins & Bars</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Crocks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Trending today!<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ruffles & Frills</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pastel Kurtas & Kurtis</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Designer Net Sarees</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button5 (Baby & Kids) -->
+            <div class="dropdown mega-menu" id="button5">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Baby & Kids
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Kids Clothing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Boys Clothing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shorts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Innerwear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Girls' Clothing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dresses & Skirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ethnic Wear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">T-shirts & Tops</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Innerwear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Baby Boy's Clothing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Combos Sets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">T-Shirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Innerwear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Baby Girl's Clothing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Combos Sets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dresses & Gowns</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Innerwear</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Kids' Footwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Boys' Footwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sandals</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sport Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Girls' Footwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Flats & Bellies</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sport Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Infant Footwear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Character Shoes<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kids' Watches</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kids' Sunglasses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Kids' Winter Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Boys' Winter Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Boys' Sweatshirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Boys' Jackets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Girls' Winter Wear<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Girls' Sweatshirts</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Girls' Jackets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Infant Winter Wear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Thermals</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Toys<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Remote Control Toys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Educational Toys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Soft Toys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cars & Die-cast Vehicles</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Outdoor Toys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Action Figures</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Board Games</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Musical Toys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dolls & Doll Houses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Puzzles</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">S.T.E.M. Toys</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Helicopter & Drones</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Toy Guns</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Party Supplies</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>School Supplies<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">School Bags</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">School Combo Sets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lunch Box</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Baby Care<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Diapers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wipes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Diapering & Potty Training</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Bath, Hair & Skin Care</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Grooming</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Bathing Accessories</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Gift Sets & Combo</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Oral Care</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Nursing & Breast Feeding</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Food</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Feeding Bottle & Accessories</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Feeding Utensils & Accessories</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Bedding</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Gear</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Medical & Health Care</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Proofing & Safety</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Baby Cleaners & Detergents</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Featured Brands<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Miss & Chief</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Barbie</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Disney</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">United Colors Of Benetton</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">The Children's Place</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">US Polo</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Flying Machine</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Crocs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Puma</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Funskool</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lego</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Luvlap</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mamy Poko</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mee Mee</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button6 (Home & Furniture) -->
+            <div class="dropdown mega-menu" id="button6">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Home & Furniture
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Kitchen, Cookware & Serveware<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pans</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Tawas</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pressure Cookers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kitchen Tools</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Gas Stoves</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Tableware & Dinnerware<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Coffee Mugs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dinner Set</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Barware</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Kitchen Storage<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Water Bottles</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lunch Boxes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Flasks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Casseroles</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kitchen Containers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Cleaning Supplies<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Furniture Top Offers<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Bed Room Furniture<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Beds</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mattresses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wardrobes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Living Room Furniture<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sofa</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sofa Beds</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">TV Units</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dining Tables & Chairs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Coffee Tables<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shoe Racks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Office & Study Furniture<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kids Room Furniture</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>DIY Furniture<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bean Bags</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Collapsible Wardrobes</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Furnishing<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bedsheets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Curtains</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cushions & Pillows</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Blankets</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bath Towels</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Kitchen & Table Linen</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Floor Coverings</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Smart Home Automation<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Security System</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Door Locks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Home Improvement<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Tools & Measuring Equipments</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Home Utilities & Organizers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lawn & Gardening</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bathroom & Kitchen Fittings</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Home Decor<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Paintings</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Clocks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wall Shelves</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Stickers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Showpieces & Figurines</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Home Lighting<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bulbs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Wall Lamp</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Table Lamp</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ceiling Lamp</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Emergency Lights</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Festive Decor & Gifts<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Pet Supplies<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dogs</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cats</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Fish & Aquatics</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Durability Certified Furniture<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Featured<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Christmas Store<i class="bi bi-caret-right-fill"></i></strong>></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Mugs Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Gardening Store<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Stainless Steel Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Milton</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Bombay Dyeing</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">@home</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Home Town</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ajanta</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Spaces by Welspun</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Prestige</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Perfect Home Store<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button7 (Sports, Books & More) -->
+            <div class="dropdown mega-menu" id="button7">
+                <a href="#" class="btn btn-mega-menu dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Sports, Books & More
+                </a>
+                <ul class="dropdown-menu mega-dropdown-menu-enhancement" area-labelledby="dropdownMenuButton1">
+                    <div class="separate-row mega-menu-row-enhancement">
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Sports<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cricket</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Badminton</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cycling</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Football</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Skating</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Camping & Hiking</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Swimming</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Exercise Fitness<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Cardio Equipment</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Home Gyms</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Support</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Dumbbells</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ab Exercisers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Shakers & Sippers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Yoga Mat</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Gym Gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Food Essentials<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Nuts & Dry Fruits</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Tea, Coffee and Beverages</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Chocolates</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Snacks Corner</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Gifting Combos</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Sweets Store</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Jams, Spreads and Honey</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Breakfast items</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Health And Nutrition<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">All Supplements</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Protein Supplements</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Vitamin Supplements</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Health Drinks</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Ayurvedic Supplements</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Books<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Entrance Exams</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Academics</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Literature & Fiction</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Non Fiction</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Young Readers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Self-Help</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">E-learning</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Preorders</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Indian Languages</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Stationary<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pens</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Diaries</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Card Holders</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Desk Organizers</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Calculators</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Key Chains</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Auto Accessories<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Helmets & Riding Gears</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Car Audio/Video</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Car Mobile Accessories</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">CAr & Bike Care</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Vehicle Lubricant</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Industrial & Scientific Tools<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Industrial Measurement Devices</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Industrial Testing DEvices</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Lab & Scientific Products</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Packaging & Shipping Products</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Safety Products</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Medical Supplies<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Pregnancy and Fertility Kits</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Hot Water Bag</a></li>
+                            </ul>
+                        </div>
+                        <div class="separate-cols">
+                            <ul class="remove-style">
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Music<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Musical Instruments</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Music</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Movies & TV Shoes</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Gaming<i class="bi bi-caret-right-fill"></i></strong></a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Gaming Consoles</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Gaming Accessories</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">PS4 Games</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement">Smart Glasses</a></li>
+                                <li><a href="#" class="mega-dropdown-item-enhancement"><strong>Grocery(Only in Select Cities)</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- button8 (Flights) -->
+            <div class="dropdown mega-menu" id="button8">
+                <a href="#" class="btn btn-mega-menu" id="dropdownMenuButton1" aria-expanded="false">
+                Flights
+                </a>
+            </div>
+
+            <!-- button9 (Offer Zone) -->
+            <div class="dropdown mega-menu" id="button9">
+                <a href="#" class="btn btn-mega-menu" id="dropdownMenuButton1" aria-expanded="false">
+                Offer Zone
+                </a>
+            </div>
+
+            <!-- button10 (Grocery) -->
+            <div class="dropdown mega-menu" id="button10">
+                <a href="#" class="btn btn-mega-menu" id="dropdownMenuButton1" aria-expanded="false">
+                Grocery
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <!-- main content here -->
+
+            <!-- (left) item-card: is a custom class -->
+            <div class="card item-card">
+                <img class="item-card-img" src="../res/helmet-icons/helmet13.jpeg" alt="...">
+                <div class="card-body item-card-body">
+                    <button class="btn btn-warning btn-lg item-card-btn1">Add To Cart</button>
+                    <button class="btn btn-danger btn-lg item-card-btn2">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- (right) content -->
+            <div class="content">
+                <div class="description">VEGA Crux Motorbike Helmet  (Black)</div>
+                <div class="rating">
+                    <span class="stars">4.3 <i class="bi bi-star-fill"></i></span>
+                    <span class="ratings">1,08,693 Ratings</span>
+                    <span class="reviews">15,135 Reviews</span>
+                </div>
+                <div class="price">
+                    <span class="new-price">₹1,184</span>
+                    <span class="old-price">₹1,358</span>
+                    <span class="discount">12% off</span>
+                </div>
+                <div class="offer">
+                    <div class="offer1">Available offers</div>
+                    <div class="offer2"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Bank Offer</span> 5% Cashback on Flipkart Axis Bank CardT&C</div>
+                    <div class="offer3"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Bank Offer</span> Extra 10% off on Prepaid TransactionsT&C</div>
+                    <div class="offer4"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Combo Offer</span> Buy 2 items save 3%;Buy 3-4 save 7%;Buy 5+ save 10%See all productsT&C</div>
+                    <div class="offer5"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Partner Offer</span> Sign up for Flipkart Pay Later and get Flipkart Gift Card worth ₹100*Know More</div>
+                </div>
+
+            <div class="delivery-bar">
+                <label for="delivery-to">
+                    Delivery
+                </label>
+                <input type="text" id="delivery-to" class="form-control form-control-sm">
+                <button class="btn btn-sm">Change</button>
+            </div>
+
+            <div class="size">
+                <span>Size</span>
+                <label for="medium" class="btn btn-outline-primary">M
+                    <input type="checkbox" class="btn-check" autocomplete="on" id="medium">
+                </label>
+                
+                <label for="large" class="btn btn-outline-primary">L
+                    <input type="checkbox" class="btn-check" autocomplete="off" id="large">
+                </label>
+            </div>
+
+            <div class="highlight-services">
+                <div class="highlights">
+                    <span>Highlights: </span>
+                    <ul>
+                        <li>Type: Flip-up</li>
+                        <li>For Men, Women</li>
+                        <li>Visor Present</li>
+                        <li>Size: M</li>
+                        <li>Quick Release Buckle</li>
+                    </ul>
+                </div>
+
+                <div class="services">
+                    <div><i class="bi bi-recycle"></i> 7 day replacement policy</div>
+                    <div><i class="fa fa-rupee" style="color:blue"></i> Cash on delivery available</div>
+                </div>
+            </div>
+
+            <div class="summary">
+                <div>Description</div>
+                <p>Keeping yourself safe while riding your bike is of utmost importance.</p>
+                <p> Wear this sturdy motorbike helmet from VEGA Crux as you make your way through the crowded city streets.</p>
+                <p>Scratch-resistant Visor</p>
+                <p>This flip-up motorbike helmet comes with a scratch-resistant visor which shields your eyes from sun rays and dust particles.</p>
+                <p>Leather Finish</p>
+                <p>This black helmet has a cool leather finish on the outside and a nice padded channeling for proper ventilation on the inside.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------------------------------------------| footer ------------------------------------------------------>
+    <!-- <div id="lower_links"></div> -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="footer-headings">ABOUT</p>
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Flipkart Wholesale</a>
+                    <a href="#">Cooperate Information</a>
+                </div>
+                <div class="col">
+                    <p class="footer-headings">HELP</p>
+                    <a href="#">Payment</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Report Infringement</a>
+                </div>
+                <div class="col">
+                    <p class="footer-headings">POLICY</p>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+                </div>
+                <div class="col">
+                    <p class="footer-headings">SOCIAL</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+                <div class="col normal-line-height">
+                    <p class="footer-headings">Mail Us:</p>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, </p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                </div>
+                <div class="col normal-line-height">
+                    <p class="footer-headings">Registered Office Address:</p>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buldings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road,</p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid last-row">
+            <i class="icon bi bi-bag-fill"></i><span class="icon-text">Sell On Flipkart</span>
+            <i class="icon margin-l bi bi-star"></i><span class="icon-text">Advertise</span>
+            <i class="icon margin-l bi bi-gift"></i><span class="icon-text">Gift Cards</span>
+            <i class="icon margin-l bi bi-question-circle-fill"></i><span class="icon-text">Help Center</span>
+            <span class="margin-l icon-text">&copy; 2007-2022 Flipkart.com</span>
+            <!-- <span class="icon-imgs">
+                <img src="../res/icons/cards/visa.jpg" alt="visa">
+                <img src="../res/icons/cards/card2.png" alt="card2">
+                <img src="../res/icons/cards/card3.png" alt="card3">
+                <img src="../res/icons/cards/card4.png" alt="card4">
+                <img src="../res/icons/cards/card5.png" alt="card5">
+                <img src="../res/icons/cards/card6.png" alt="card6">
+                <img src="../res/icons/cards/card7.png" alt="card7">
+                <img src="../res/icons/cards/card8.png" alt="card8">
+                <img src="../res/icons/cards/card9.png" alt="card9">
+                <img src="../res/icons/cards/card10.png" alt="card10">
+            </span> -->
+            <span class="all-cards">
+                <img src="../res/icons/cards/all-cards.png" alt="all cards">
+            </span>
+        </div>
+        <div class="text-center icon-text copyright-protected"><a href="https://github.com/suraj-singh12" target="_blank">&copy; suraj-singh12 (Suraj Singh)</a></div>
+    </footer>
+
+</body>
+</html>

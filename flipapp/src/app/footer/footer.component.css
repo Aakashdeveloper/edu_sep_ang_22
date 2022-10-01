@@ -1,0 +1,27 @@
+/* Footer */
+footer{
+    height:400px;
+    background-color:#172337;
+    width:100%;
+    text-align: center;
+    color:white
+}
+#mainFoot{
+    margin-left: 50px;
+    width:100%;
+    display: inline-block;
+}
+.footCol{
+    height:300px;
+    width: 17%;
+    float: left;
+    margin:1%
+}
+.footCol h5{
+    color:gray
+}
+
+.footCol a{
+    display:block;
+    line-height: 1.5;
+}

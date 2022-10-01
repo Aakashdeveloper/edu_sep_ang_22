@@ -1,0 +1,44 @@
+<div id="main">
+    <div id="top-strip">
+        <div id="strip-container">
+            <figure class="strip-icons" *ngFor="let item of topData">
+                <a href="">
+                    <img [src]="item.imgUrl" [alt]="item.name"/>
+                    <figcaption>{{item.name}}</figcaption>
+                </a>
+            </figure>
+        </div>
+    </div>
+    <div id="slider">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/images/carousel-imgs/oppo-k10.jpg" alt="Los Angeles"
+                class="sliderImage">
+              </div>
+          
+              <div class="item">
+                <img src="assets/images/carousel-imgs/redmi10.jpg" alt="Chicago"
+                class="sliderImage">
+              </div>
+          
+              <div class="item">
+                <img src="assets/images/carousel-imgs/samsung-f23.jpg" alt="New York"
+                class="sliderImage">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+    </div>
+    <app-cloths></app-cloths>
+</div>
+<!-- <h1>{{heading}}</h1>
+<p>{{price}}</p> -->

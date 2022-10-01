@@ -1,0 +1,369 @@
+body {
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Roboto', 'Arial';
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+    line-height: 1.4;
+}
+/* ------------------------------------------ header CSS ------------------------------------------ */
+header {
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    background-color:#2874f0;
+}
+header > div {
+    margin-top: 1%;
+}
+/* Logo CSS */
+#logo {
+    margin-left: 12%;
+    float: left;
+    margin-top: 12px;
+    width: 90px;
+}
+#logo img {
+    height: 40%;
+}
+#logo a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    float: left;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: -1px;
+}
+#logo a:hover {
+    text-decoration: underline;
+}
+#plus {
+    color: #ffe500;
+    font-weight: 500;
+    margin-right: 2px;
+}
+#plus img {
+    width: 10px;
+    height: 10px;
+}
+
+/* search bar CSS */
+#search-bar {
+    /* margin-left: -0.5%; */
+    margin-left: 12px;
+    margin-top: 5px;
+    width: 38%;
+    display:inline-block;
+    position:relative;
+    height: auto;
+}
+#search-bar input {
+    width: 90%;    
+    height: 65%;
+    /* font-size: 14px; */
+    padding: 0 16px;
+    border: none;
+}
+form#search button{
+    display: inline-block;
+    position: absolute; 
+    /* width: 10%; */       /* don't destroy the aspect ratio by giving width, give width or height but not both to any image or icon, always remember */
+    height: 65%;
+    /* padding: 16px; */
+    color: rgb(40, 116, 241);
+    border: none;
+    margin-top: 5px;
+    background-color:white;
+}
+/* .fa-search {
+    font-size: 18px;
+} */
+input:focus {
+    outline: none;
+}
+
+/* login button css */
+#login {
+    float: right;
+    background-color: #f6f6f6;
+    width: 8%;
+    text-align: center;
+    height: 68%;
+    margin-top: 10px;
+    /* padding: 0; */
+    margin-right: 3%;
+    /* font-weight: bolder; */
+    border-radius: 2px;
+    /* color: #2874f0; */
+    /* cursor: pointer; */
+    border: 1px solid #dbdbdb;
+}
+#more {
+    font-weight: bolder;
+    float: right;
+    margin-right: 4%;
+    /* width: 8%; */
+    width: auto;
+    text-align: center;
+    height: 68%;
+    margin-top: 10px;
+}
+#more button {
+    text-decoration: none;
+    color: white;
+}
+#cart {
+    font-weight: bolder;
+    float: right;
+    color: white;
+    margin-right: 9%;
+    cursor: hand;
+    margin-top: 20px;
+}
+#cart span {
+    margin-left: 2px; 
+}
+/* -----------------------------------------------------------------------------DROPDOWN (login buttons & More Button)------------------------------------------------------------------------------- */
+/* this makes dropdown to pop up on hover */
+.hover-dropdown-small:hover .dropdown-menu-small {
+    display: block;
+    margin: 0;/* remove the gap so it doesn't close */
+    transform: translate(-50%, 0px);
+}
+/* center the dropdown */
+.dropdown-menu-center {
+    left: 50% !important;
+    right: auto !important;
+    min-width: 240px;
+    font-size: 14px;
+    /* transform: translate(-50%, 35px) !important; */
+}
+.dropdown-menu-center li {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 4px;
+}
+.dropdown-menu-small-icons {
+    color: rgb(77, 77, 243);
+}
+.dropdown-menu-small-text {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* header CSS FINISH */
+
+/* ---------------------------------------------- */
+/* custom for search page top strip only */
+.main-content {
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    background-color:red;
+}
+.btn-mega-menu {
+    float: left;
+    font-size: 14px;
+    /* font-weight: 600; */
+    text-shadow: 2px;
+    color: black;
+    font-family: Roboto,Arial,sans-serif;
+    letter-spacing: 0;
+}
+.mega-dropdown-menu-enhancement {
+    display: none; 
+}
+
+/* dropdown on hover */
+.mega-menu:hover .mega-dropdown-menu-enhancement {
+    display: block;
+    margin: 0;
+}
+ul.remove-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.mega-dropdown-menu-row-enhancement {
+    font-size: 12px;
+}
+a.mega-dropdown-item-enhancement {
+    text-decoration: none;
+    color: #666;
+    padding: 25px;
+    font-size: 13px;
+    text-align: left;
+    line-height: 2.1em;
+}
+
+.mega-dropdown-menu-enhancement {
+    transform: translate(-25px, 35px) !important;
+    width: 95%;
+}
+.separate-row {
+    width: 100%;
+    font-size: 13px;
+}
+.separate-cols {
+    width: 20%;
+    float: left;
+}
+strong {
+    color: #4e4e4e;
+}
+
+/* container div styling */
+.top-strip2 {
+    background-color: white;
+    color: black;
+    min-height: 40px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    padding-left: 10%;
+}
+
+/* ------------------------------------- main content CSS -------------------------------------*/
+/* main content */
+/* -------------------------------------------------------------------- */
+
+/* ----------------.-------------------------------------- footer CSS ------------------------------------------------------ */
+footer {
+    background-color: #172337;
+    padding: 3%;
+    margin-top: 4%;
+}
+footer a , footer p{
+    line-height: 2;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.footer-headings {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.normal-line-height p {
+    line-height:1.5;
+    margin-bottom: 0;
+}
+
+.last-row {
+    border-top: 1px solid #454d5e;
+    height: auto;
+    padding: 25px 0;
+    margin-top: 40px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    /* -webkit-justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; */
+}
+.icon-text {
+    color: #fff;
+    margin-left: 8px;
+}
+footer .last-row .icon {
+    color: #ffe11b;
+}
+.margin-l {
+    display: inline-block;
+    margin-left: 7%;
+}
+.icon-imgs {
+    height: 17px;
+    display: inline-block;
+    margin-left: 7%;
+}
+.icon-imgs img {
+    height: 100%;
+}
+.all-cards {
+    width: 27%;
+    margin-left: 7%;
+}
+.all-cards img {
+    width: 100%;
+}
+.copyright-protected a {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1280px) {
+    .top-strip2 {
+        padding-left: 8%;
+    }
+}
+@media screen and (max-width: 1224px) {
+    #button9, #button10 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    #button8 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #button7 {
+        display: none;
+    }
+    .top-strip2 {
+        padding-left: 14%;
+    }
+    #cart, #more {
+        margin-right: 3%;
+    }
+    #login {
+        margin-right: 1%;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    #button6 {
+        display: none;
+    }
+    #more {
+        margin-right: 1%;
+    }
+    #logo {
+        margin-left: 8%;
+    }
+    #login {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .top-strip2 {
+        display: none;
+    }
+    #more {
+        display: none;
+    }
+    #search-bar {
+        width: 33%;
+    }
+    #login {
+        margin-right: 3%;
+    }
+}

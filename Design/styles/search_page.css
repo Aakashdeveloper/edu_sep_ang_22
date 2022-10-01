@@ -1,0 +1,198 @@
+ /* ------------------------------------- main content CSS -------------------------------------*/
+.main {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+} 
+.filters {
+    margin-top: 10px;
+    width: 18%;
+    height: auto;
+    margin-left: 15px;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    top: 41px;
+    background: #fff;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 6%);
+    float: left;
+}
+.price-select select {
+    width: 42%;
+    display:inline-block;
+    font-size: 12px;
+}
+.price-select .upper {
+    width: 48%;
+}
+.price-select > .upper:hover, .price-select > .lower:hover {
+    box-shadow: 1px 1px 1px lightblue, 1px 1px 2px lightgreen;
+}
+.content {
+    width: 79%;
+    float: left;
+}
+/* .filters-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.filters .sub-heading {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 2px;
+    padding-top: 5px;
+}
+.filters .sub-items {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 12px;
+} */
+.filters {
+    padding-left: 20px;
+}
+.filters > p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sub-items p {
+    padding: 0;
+    margin: 0;
+    padding: 4px;
+}
+.color {
+    margin-bottom: 1rem;
+}
+.blue {
+    color: blue;
+}
+.ratings {
+    color: grey;
+    padding: 2px;
+}
+.stars-star {
+    color:white;
+}
+.ratings, .reviews, .old-price {
+    color: grey;
+}
+.discount {
+    color: #388e3c;
+}
+.offer {
+    color: rgb(38, 165, 65);
+    font-size: 12px;
+    font-weight: 700;
+}
+/* strip above card CSS */
+.results-strip, .results-strip p, .results-strip .strip-of-sort-by {
+    margin: 0;
+}
+.results-strip {
+    padding-left: 10px;
+}
+.results-strip > p {
+    margin-left: 10px;
+}
+/* card CSS */
+.flex-box {
+    /* margin-top: 15px; */
+    /* display: flex; */
+    position: relative;
+    /* top: -68px; */
+    -webkit-align-items: stretch; 
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-left: 10px;
+    background: #fff;
+    background-color: #fff;
+    margin-top: 3%;
+    /* width: 78%; */
+}
+.custom-card {
+    border: none;
+    padding: 16px;
+    position: relative;
+    transition: box-shadow .2s ease-in-out;
+    width: 24%;
+    margin: 5px;
+    flex-grow: 1;
+}
+.custom-card:hover {
+    /* box-shadow: 0 3px 16px 0 rgb(0 0 0 / 11%); */
+    box-shadow: 1px 1px 12px lightgrey, 2px 2px 2px lightgreen;
+}
+.card-img-width {
+    width: 62% !important;
+    margin: auto;
+    margin-left: 20%;
+}
+.custom-card-anchor {
+    text-decoration: none;
+    color: inherit;
+}
+.custom-card-anchor:hover {
+    color: inherit;
+}
+
+@media screen and (max-width: 1345px) {
+    .content {
+        width: 72%;
+    }
+    .custom-card {
+        width: 29%;
+    }
+    .filters {
+        width: 22%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .content {
+        width: 67%;
+    }
+    .filters {
+        width: 27%;
+    }
+    .custom-card {
+        width: 43%;
+        margin-left: 4%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .custom-card {
+        width: 48%;
+        margin: 1%;
+        padding: 11px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .filters {
+        top: 51px;
+        width: 37%;
+    }
+    .custom-card {
+        width: 91%;
+        margin: 4%;
+    }
+    .content {
+        width: 54%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .filters {
+        margin-right: 1%;
+        top: 73px;
+        width: 42%;
+    }
+    .content {
+        width: 52%;
+    }
+
+}

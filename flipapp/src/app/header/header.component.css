@@ -1,0 +1,72 @@
+.heading{
+    text-align: center;
+}body{
+    margin: auto;
+}
+/* Header */
+header{
+    height:55px;
+    background-color: #2874f0;
+    display: inline-block;
+    width: 100%;
+}
+
+#logo{
+    width:90px;
+    margin-left:10%;
+    margin-top: 0.5%;
+    float: left;
+   
+ 
+}
+#logo  img{
+    width:100%;
+}
+#logo a{
+    text-decoration:none;
+    color:white
+}
+#plus{
+    margin-left:38%;
+}
+#plus img{
+    height:20px;
+    width:20px;
+}
+#search-box{
+   width:45%;
+   margin-left:7%;
+   float: left;
+}
+#search-box input{
+    width:90%;
+    margin-top: 1%;
+    height:35px;
+}
+#search-box button{
+    display: inline-block;
+    position: absolute; 
+    height:34px;
+    color: rgb(40, 116, 241);
+    border: none;
+    margin-top: 7px;
+    margin-left: -1;
+    background-color:white;
+} 
+#login{
+    width:25%;
+    margin-left:6%;
+    margin-top: 0.5%;
+    float: left;
+}
+
+#login button{
+    background-color:white;
+    border: none;
+    height: 65%;
+    width: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(40, 116, 241);
+
+}
