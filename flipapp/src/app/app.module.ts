@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component'
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ClothsComponent } from './home/cloths.component';
 import { HomeComponent } from './home/home.component';
+import { MobileComponent } from './home/mobile.component';
+import { HomeService } from './services/home.service';
 
 // decorator
 @NgModule({
@@ -17,14 +20,16 @@ import { HomeComponent } from './home/home.component';
         HeaderComponent,
         FooterComponent,
         HomeComponent,
-        ClothsComponent
+        ClothsComponent,
+        MobileComponent
     ],
 
     // All the modules 
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
-        CarouselModule
+        CarouselModule,
+        HttpClientModule
     ],
 
     // Only and only main component
@@ -33,7 +38,9 @@ import { HomeComponent } from './home/home.component';
     ],
 
     // All the services
-    providers:[]
+    providers:[
+        HomeService
+    ]
 
 })
 

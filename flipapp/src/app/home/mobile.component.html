@@ -1,0 +1,15 @@
+<div class="deal">
+    <h2>Mobile Deals</h2>
+    <hr/>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide style="width:200px" *ngFor="let data of mobiles">
+            <div class="card">
+                <img [src]="data.image" [alt]="data.description"/>
+                <div>
+                    <p>{{data.description}}</p>
+                    <span>Min {{data.discount}}% off</span>
+                </div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>

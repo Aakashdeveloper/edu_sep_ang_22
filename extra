@@ -190,3 +190,19 @@ let c = true
 int a = 10
 str b = "hii"
 bool c = true
+
+
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
+
+
+function add(){
+    return a+b
+}
+
+let add = () => { return a+b }
