@@ -144,6 +144,7 @@ angular.json > This is the second file that run after package.json
 .browserslistrc > What all browser support we have
 
 
+// Step to generate component
 ng g c componentname
 
 
@@ -206,3 +207,35 @@ function add(){
 }
 
 let add = () => { return a+b }
+
+//params
+> what you pass after /
+> Use to pass 1 or 2 values
+> It is complusory to define in the route
+
+//Query Params
+> What we pass after ?
+> Use to pass multiple values
+> No Need to define in the route
+
+
+var a = "realme Narzo 50A (Oxygen Blue, 64 GB)"
+
+var out = a.split(' ')[0].charAt(0).toUpperCase()+a.split(' ')[0].slice(1).toLowerCase()
+out
+'Realme'
+
+let dataArr = a.split(' ')
+dataArr
+['realme', 'Narzo', '50A', '(Oxygen', 'Blue,', '64', 'GB)']
+
+dataArr.splice(0,1,out)
+dataArr
+['Realme', 'Narzo', '50A', '(Oxygen', 'Blue,', '64', 'GB)']
+
+
+dataArr.join()
+'Realme,Narzo,50A,(Oxygen,Blue,,64,GB)'
+
+dataArr.join().replace(/,/g,' ')
+'Realme Narzo 50A (Oxygen Blue  64 GB)'

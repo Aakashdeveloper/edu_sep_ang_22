@@ -2,7 +2,7 @@
     <div id="top-strip">
         <div id="strip-container">
             <figure class="strip-icons" *ngFor="let item of topData">
-                <a href="">
+                <a [routerLink]="['/listing',item.name]">
                     <img [src]="item.imgUrl" [alt]="item.name"/>
                     <figcaption>{{item.name}}</figcaption>
                 </a>
