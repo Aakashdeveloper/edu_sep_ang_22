@@ -22,5 +22,4 @@ export class HomeService {
         return this.http.get<IMobile[]>(`${this.url}/item/mobile?limit=6`)
     }
 
-
 }

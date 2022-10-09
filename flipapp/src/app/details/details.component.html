@@ -1,0 +1,81 @@
+<div class="main">
+    <div class="card item-card">
+        <img class="item-card-img" [src]="details[0].image" alt="..."/>
+        <div class="card-body item-card-body">
+            <button class="btn btn-warning btn-lg item-card-btn1"> Add To Cart</button>
+            &nbsp;
+            <button class="btn btn-danger btn-lg item-card-btn1">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="description">{{details[0].description|myUpper}}</div>
+        <div class="rating">
+            <span class="stars">{{details[0].hidden_stars}} <i class="fa-solid fa-star"></i></span>
+            <span class="ratings">{{details[0].ratings?details[0].ratings:'1,43,334 Rating'}}</span>
+            <span class="reviews">{{details[0].reviews?details[0].reviews:'15,435 Reviews'}}</span>
+        </div>
+        <div class="price">
+            <span class="new-price">{{details[0].new_price|currency:'INR'}}</span>
+            <span class="old-price">{{details[0].old_price|currency:'INR'}}</span>
+            <span class="discount">{{details[0].discount}}% off</span>
+        </div>
+
+        <div class="offer">
+            <div class="offer1">Available offers</div>
+            <div class="offer2"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Bank Offer</span> 5% Cashback on Flipkart Axis Bank CardT&C</div>
+            <div class="offer3"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Bank Offer</span> Extra 10% off on Prepaid TransactionsT&C</div>
+            <div class="offer4"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Combo Offer</span> Buy 2 items save 3%;Buy 3-4 save 7%;Buy 5+ save 10%See all productsT&C</div>
+            <div class="offer5"><i class="bi tags-color bi-tag-fill"></i> <span class="offer-header">Partner Offer</span> Sign up for Flipkart Pay Later and get Flipkart Gift Card worth ₹100*Know More</div>
+        </div>
+
+        <div class="delivery-bar">
+            <label for="delivery-to">
+                Delivery
+            </label>
+            <input type="text" id="delivery-to" class="form-control form-control-sm">
+            <button class="btn btn-sm">Change</button>
+        </div>
+
+        <div class="size" *ngIf="catName == 'cloths'">
+            <span>Size</span>
+            <label for="medium" class="btn btn-outline-primary">M
+                <input type="checkbox" class="btn-check" autocomplete="on" id="medium">
+            </label>
+            
+            <label for="large" class="btn btn-outline-primary">L
+                <input type="checkbox" class="btn-check" autocomplete="off" id="large">
+            </label>
+        </div>
+
+        <div class="highlight-services">
+            <div class="highlights" *ngIf="catName == 'mobile'">
+                <span>Highlights: </span>
+                <ul>
+                    <li>{{details[0].more_data}}</li>
+                    <li>{{details[0].more_data2}}</li>
+                    <li>{{details[0].more_data3}}</li>
+                    <li>{{details[0].more_data4}}</li>
+                    <li>{{details[0].more_data5}}</li>
+                </ul>
+            </div>
+
+            <div class="services">
+                <div><i class="bi bi-recycle"></i> 7 day replacement policy</div>
+                <div><i class="fa fa-rupee" style="color:blue"></i> Cash on delivery available</div>
+                <div><i class="fa-solid fa-truck"></i> {{details[0].delivery_type}}</div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div>Description</div>
+            <p>Keeping yourself safe while riding your bike is of utmost importance.</p>
+            <p> Wear this sturdy motorbike helmet from VEGA Crux as you make your way through the crowded city streets.</p>
+            <p>Scratch-resistant Visor</p>
+            <p>This flip-up motorbike helmet comes with a scratch-resistant visor which shields your eyes from sun rays and dust particles.</p>
+            <p>Leather Finish</p>
+            <p>This black helmet has a cool leather finish on the outside and a nice padded channeling for proper ventilation on the inside.</p>
+        </div>
+    </div>
+
+</div>

@@ -16,9 +16,13 @@ import { ListingComponent } from './listing/listing.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MyupperPipe } from './pipe/myupper.pipe';
 import { DiscountPipe } from './pipe/discount.pipe';
+import { ProdSearchPipe } from './pipe/search.pipe';
+import { RatingFilterComponent } from './filters/rating.component';
+import { DetailsComponent } from './details/details.component';
 
 import { HomeService } from './services/home.service';
 import { ListingService } from './services/listing.service';
+import { DetailService } from './services/details.service';
 
 
 // decorator
@@ -34,7 +38,10 @@ import { ListingService } from './services/listing.service';
         ListingComponent,
         NotfoundComponent,
         MyupperPipe,
-        DiscountPipe
+        DiscountPipe,
+        ProdSearchPipe,
+        RatingFilterComponent,
+        DetailsComponent
     ],
 
     // All the modules 
@@ -55,7 +62,8 @@ import { ListingService } from './services/listing.service';
     // All the services
     providers:[
         HomeService,
-        ListingService
+        ListingService,
+        DetailService
     ]
 
 })

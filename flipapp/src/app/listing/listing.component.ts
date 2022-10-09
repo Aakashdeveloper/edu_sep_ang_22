@@ -9,8 +9,10 @@ import { ListingService } from '../services/listing.service'
 
 export class ListingComponent implements OnInit{
 
-    itemType:string = 'List';
+    itemType:string = '';
     catData:any[]=[];
+    userInput:string=''
+    filterText:string = 'Rating Filter'
     // offertill = new Date()
 
     constructor(private route:ActivatedRoute,
@@ -21,5 +23,13 @@ export class ListingComponent implements OnInit{
         // console.log(">>>",this.itemType)
         this.listingService.getDataWrtC(this.itemType)
             .subscribe((data:any[]) => this.catData = data)
+    }
+
+    dataReceive(ratingVal:string){
+        console.log("innn listing>>>",ratingVal)
+        this.listingService.getDataWrtR(ratingVal,this.itemType)
+            .subscribe((data:any[]) => {
+                this.catData = data
+            })
     }
 }

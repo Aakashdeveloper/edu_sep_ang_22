@@ -12,4 +12,8 @@ export class ListingService{
     getDataWrtC(catName:string):Observable<any[]>{
         return this.http.get<any[]>(`${this.url}/item/${catName}`)
     }
+
+    getDataWrtR(value:string,catName:string):Observable<any[]>{
+        return this.http.get<any[]>(`${this.url}/filter/rating/${catName}/${value}`)
+    }
 }

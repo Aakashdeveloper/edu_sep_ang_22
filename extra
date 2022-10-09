@@ -239,3 +239,23 @@ dataArr.join()
 
 dataArr.join().replace(/,/g,' ')
 'Realme Narzo 50A (Oxygen Blue  64 GB)'
+
+var a = [5,8,3,7,2,9,6]
+a.filter((data) => {return data>5})
+[8,7,9,6]
+
+var a = ['Amsterdam','Helsinki','Venice','Nice']
+undefined
+a.indexOf('Delhi')
+-1
+a.indexOf('Dubai')
+-1
+a.indexOf('Helsinki')
+1
+a.indexOf('Amsterdam')
+0
+a.indexOf('Nice')
+3
+
+@Input > parent > child
+@Output> Child > Parent

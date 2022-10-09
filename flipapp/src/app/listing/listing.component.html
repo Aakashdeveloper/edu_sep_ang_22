@@ -1,19 +1,23 @@
 <div id="main">
     <div class="filters">
-
+        <h2>Filters</h2>
+        <app-rating-filter [filterName]="filterText"
+        (ratingClicked)="dataReceive($event)"
+        ></app-rating-filter>
     </div>
     <div class="content" *ngIf="catData && catData.length; else noData">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <input placeholder="Enter Product Name" class="form-control"/>
+                    <input placeholder="Enter Product Name" class="form-control"
+                    [(ngModel)]="userInput"/>
                 </div>
-                <p>Results for </p>
-                <p>Number of Results: </p>
+                <p>Results for <b>{{userInput}}</b> </p>
+                <p>Number of Results: <b>{{(catData| searchFilter:userInput).length}}</b> </p>
             </div>
         </div>
-        <div *ngFor="let data of catData">
-            <a class="custom-card-anchor">
+        <div *ngFor="let data of catData | searchFilter:userInput">
+            <a class="custom-card-anchor" [routerLink]="['/details']" [queryParams]="{catName:itemType,id:data.item_id}" >
                 <div class="card custom-card">
                     <img [src]="data.image" [alt]="data.description" 
                     class="card-img-top card-img-width image"/>
