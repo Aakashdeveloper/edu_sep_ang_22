@@ -1,30 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { HomeModule } from './home/home.module';
+import { ListModule } from './listing/listing.module';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component'
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { ClothsComponent } from './home/cloths.component';
-import { HomeComponent } from './home/home.component';
-import { MobileComponent } from './home/mobile.component';
-import { ListingComponent } from './listing/listing.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { MyupperPipe } from './pipe/myupper.pipe';
-import { DiscountPipe } from './pipe/discount.pipe';
-import { ProdSearchPipe } from './pipe/search.pipe';
-import { RatingFilterComponent } from './filters/rating.component';
 import { DetailsComponent } from './details/details.component';
-
-import { HomeService } from './services/home.service';
-import { ListingService } from './services/listing.service';
 import { DetailService } from './services/details.service';
-
-
 // decorator
 @NgModule({
     // All the component and pipes
@@ -32,26 +17,16 @@ import { DetailService } from './services/details.service';
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        HomeComponent,
-        ClothsComponent,
-        MobileComponent,
-        ListingComponent,
         NotfoundComponent,
-        MyupperPipe,
-        DiscountPipe,
-        ProdSearchPipe,
-        RatingFilterComponent,
         DetailsComponent
     ],
 
     // All the modules 
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
-        CarouselModule,
-        HttpClientModule,
-        AppRoutingModule,
-        FormsModule
+        HomeModule,
+        ListModule,
+        SharedModule
     ],
 
     // Only and only main component
@@ -61,12 +36,9 @@ import { DetailService } from './services/details.service';
 
     // All the services
     providers:[
-        HomeService,
-        ListingService,
         DetailService
     ]
 
 })
-
 
 export class AppModule{}

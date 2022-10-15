@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Employee Form
+        </div>
+        <div class="panel-body">
+            <form #form="ngForm" (submit)="submitForm(form)">
+                <div class="form-group" [class.has-error]="firstname.invalid && firstname.touched">
+                    <label for="fname" class="control-label">FirstName</label>
+                    <input class="form-control" id="fname"
+                    name="firstName" [ngModel]="myEmployee.firstName" required
+                    (ngModelChange)="firstToUpper($event)"
+                    #firstname="ngModel"/>
+                    <div class="alert alert-danger" *ngIf="firstname.invalid && firstname.touched">
+                        FirstName is required
+                    </div>
+                </div>
+
+                <div>
+                    <h4>{{firstname.invalid}}</h4>
+                    <!--<h4>Classess</h4>
+                         <h4>{{firstname.className}}</h4> -->
+                </div>
+
+                <div class="form-group">
+                    <label for="lname" class="control-label">LastName</label>
+                    <input class="form-control" id="lname"
+                    name="lastName" [(ngModel)]="myEmployee.lastName"/>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-6" [class.has-error]="mail.invalid && mail.dirty" >
+                        <label for="email" class="control-label">Email</label>
+                        <input class="form-control" id="email"
+                        name="email" [(ngModel)]="myEmployee.email"
+                        #mail="ngModel"
+                        pattern="^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$"
+                        />
+                        <div class="alert alert-danger" *ngIf="mail.invalid && mail.dirty">
+                           Please Enter Valid Email
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6" [class.has-error]="pwd.invalid && pwd.dirty">
+                        <label for="pass" class="control-label">Password</label>
+                        <input class="form-control" id="pass" type="password"
+                        name="password" [(ngModel)]="myEmployee.password" minlength="8"
+                        #pwd="ngModel" (click)="showPassword($event)"/>
+                        <div class="alert alert-danger" *ngIf="pwd.invalid && pwd.dirty">
+                          Min length of password is 8
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" [class.has-error]="hasCodeLangError">
+                    <label for="clang" class="control-label">Coding Language</label>
+                    <select class="form-control" id="clang"
+                    [(ngModel)]="myEmployee.clang" name="clang" (blur)="validateCodeLang()">
+                        <option value="default">Please Select Code Lang</option>
+                        <option *ngFor="let lang of language">
+                            {{lang}}
+                        </option>
+                    </select>
+                    <div class="alert alert-danger" *ngIf="hasCodeLangError">
+                        Please Select Valid Language
+                    </div>
+                </div>
+
+
+                <button class="btn btn-success" type="submit">
+                    Submit
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>

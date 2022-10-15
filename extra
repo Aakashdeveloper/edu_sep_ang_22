@@ -259,3 +259,9 @@ a.indexOf('Nice')
 
 @Input > parent > child
 @Output> Child > Parent
+
+Template form > more content in html file
+reactive form > more component in .ts file
+
+ng-pristen ng-untouched ng-valid
+ng-dirty   ng-touched   ng-invalid

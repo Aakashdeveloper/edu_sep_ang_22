@@ -32,4 +32,15 @@ export class ListingComponent implements OnInit{
                 this.catData = data
             })
     }
+
+    costReceive(cost:string){
+        let lcost = Number(cost.split('-')[0])
+        let hcost = Number(cost.split('-')[1])
+        this.listingService.getDataWrtCost(lcost,hcost,this.itemType)
+            .subscribe((data:any[]) => {
+                this.catData = data
+            })
+    }
+
+    
 }

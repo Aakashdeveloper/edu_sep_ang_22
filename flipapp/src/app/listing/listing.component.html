@@ -4,6 +4,7 @@
         <app-rating-filter [filterName]="filterText"
         (ratingClicked)="dataReceive($event)"
         ></app-rating-filter>
+        <app-cost-filter (costClicked)="costReceive($event)"></app-cost-filter>
     </div>
     <div class="content" *ngIf="catData && catData.length; else noData">
         <div class="row">
