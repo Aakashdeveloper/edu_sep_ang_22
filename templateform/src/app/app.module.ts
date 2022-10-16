@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { ConfirmComponent } from './confirm/confirm.component';
+import { FormService } from './forms/form.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { ConfirmComponent } from './confirm/confirm.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FormService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

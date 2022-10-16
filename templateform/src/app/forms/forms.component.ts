@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IUser } from './form.model';
 import { NgForm } from '@angular/forms';
+import { FormService } from './form.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forms',
@@ -9,7 +11,8 @@ import { NgForm } from '@angular/forms';
 })
 export class FormsComponent {
 
-  constructor() { }
+  constructor(private formService: FormService,
+              private router: Router) { }
 
   language:string[] = ['Node','React','Angular','JavaScript']
   myEmployee = new IUser('Nikita','Sharma','nikki@gmail.com','12345678','Node');
@@ -44,6 +47,9 @@ export class FormsComponent {
 
   submitForm(Form:NgForm): void{
     console.log(Form.value);
+    this.formService.postEmp(Form.value)
+        .subscribe((res:any[]) => {console.log('Form Submitted')})
+    this.router.navigate(['/confirm'])
 
   }
 
