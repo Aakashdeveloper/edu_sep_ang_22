@@ -1,0 +1,24 @@
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        Login Form
+    </div>
+    <div class="panel-body">
+        <h2 style="color:red">{{loginError}}</h2>
+        <form #form="ngForm" (submit)="submitForm(form)">
+            <div class="form-group">
+                <label class="form-contorl">Email</label>
+                <input class="form-control" type="text" id="email"
+                name="email" [(ngModel)] = "myEmployee.email"/>
+            </div>
+            <div class="form-group">
+                <label class="form-contorl">Password</label>
+                <input class="form-control" type="text" id="password"
+                name="password" [(ngModel)] = "myEmployee.password"/>
+            </div>
+            <button class="btn btn-warning" type="submit">
+                Login
+            </button>
+        </form>
+    </div>
+</div>
+

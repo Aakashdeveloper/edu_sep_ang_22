@@ -1,0 +1,29 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h2>User List</h2>
+        <button class="btn btn-danger" (click)="logoutUser()">Logout</button> &nbsp;
+        <button class="btn btn-info" [routerLink]="['/profile']">Profile</button>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of userList">
+                    <td>{{data._id}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.email}}</td>
+                    <td>{{data.role}}</td>
+                    <td>{{data.phone}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
