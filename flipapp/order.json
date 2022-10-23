@@ -1,0 +1,40 @@
+{
+  "orders": [
+    {
+      "cost": 249,
+      "product_name": "Unstitched Polycotton Shirt Fabric Printed",
+      "id": 83041,
+      "name": "Kritika",
+      "email": "kritika@gmail.com",
+      "address": "Hno 76 Delhi West",
+      "phone": 9876545675
+    },
+    {
+      "cost": 249,
+      "product_name": "Unstitched Polycotton Shirt Fabric Printed",
+      "id": 9684,
+      "name": "Kritika",
+      "email": "kritika@gmail.com",
+      "address": "Hno 76 Delhi West",
+      "phone": 9876545675
+    },
+    {
+      "cost": 1264,
+      "product_name": "realme Narzo 50A (Oxygen Blue, 128 GB)",
+      "id": 17471,
+      "name": "Kritika",
+      "email": "kritika@gmail.com",
+      "address": "Hno 76 Delhi West",
+      "phone": 9876545675
+    },
+    {
+      "cost": 8499,
+      "product_name": "POCO C31 (Royal Blue, 32 GB)",
+      "id": 78949,
+      "name": "Kritika",
+      "email": "kritika@gmail.com",
+      "address": "Hno 76 Delhi West",
+      "phone": 9876545675
+    }
+  ]
+}

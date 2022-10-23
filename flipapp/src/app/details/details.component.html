@@ -4,7 +4,9 @@
         <div class="card-body item-card-body">
             <button class="btn btn-warning btn-lg item-card-btn1"> Add To Cart</button>
             &nbsp;
-            <button class="btn btn-danger btn-lg item-card-btn1">Buy Now</button>
+            <button class="btn btn-danger btn-lg item-card-btn1"
+            [routerLink]="['/placeOrder',id,catName]"
+            >Buy Now</button>
         </div>
     </div>
 

@@ -10,6 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DetailsComponent } from './details/details.component';
 import { DetailService } from './services/details.service';
+import { PlaceOrderComponent } from './placeOrder/placeOrder.component';
+import { OrderService } from './services/order.service';
+import { ViewOrderComponent } from './view-order/view-order.component';
 // decorator
 @NgModule({
     // All the component and pipes
@@ -18,7 +21,9 @@ import { DetailService } from './services/details.service';
         HeaderComponent,
         FooterComponent,
         NotfoundComponent,
-        DetailsComponent
+        DetailsComponent,
+        PlaceOrderComponent,
+        ViewOrderComponent
     ],
 
     // All the modules 
@@ -36,7 +41,8 @@ import { DetailService } from './services/details.service';
 
     // All the services
     providers:[
-        DetailService
+        DetailService,
+        OrderService
     ]
 
 })

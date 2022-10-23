@@ -5,10 +5,11 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { ProfileGaurdService } from './gaurds/profileGaurd.service';
+import { UserGaurdService } from './gaurds/userGaurd.service';
 
 const routes: Routes = [
   {path:'profile',canActivate:[ProfileGaurdService],component: ProfileComponent},
-  {path:'users',component: UserlistComponent},
+  {path:'users',canActivate:[UserGaurdService],component: UserlistComponent},
   {path:'login',component: LoginFormComponent},
   {path:'register',component: RegisterFormComponent},
   {path:'',component: RegisterFormComponent}
@@ -18,7 +19,8 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [
-    ProfileGaurdService
+    ProfileGaurdService,
+    UserGaurdService
   ]
 })
 export class AppRoutingModule { }
