@@ -13,6 +13,10 @@ import { DetailService } from './services/details.service';
 import { PlaceOrderComponent } from './placeOrder/placeOrder.component';
 import { OrderService } from './services/order.service';
 import { ViewOrderComponent } from './view-order/view-order.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { LoginFormService } from './services/login.service';
+import { RegisterService } from './services/registerForm.service';
 // decorator
 @NgModule({
     // All the component and pipes
@@ -23,7 +27,9 @@ import { ViewOrderComponent } from './view-order/view-order.component';
         NotfoundComponent,
         DetailsComponent,
         PlaceOrderComponent,
-        ViewOrderComponent
+        ViewOrderComponent,
+        LoginFormComponent,
+        RegisterFormComponent
     ],
 
     // All the modules 
@@ -42,7 +48,9 @@ import { ViewOrderComponent } from './view-order/view-order.component';
     // All the services
     providers:[
         DetailService,
-        OrderService
+        OrderService,
+        LoginFormService,
+        RegisterService
     ]
 
 })

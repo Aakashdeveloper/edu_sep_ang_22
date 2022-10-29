@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Register Form
+        </div>
+        <div class="panel-body">
+            <form #form="ngForm" (submit)="submitForm(form)">
+                <div class="form-group">
+                    <label class="form-contorl">Name</label>
+                    <input class="form-control" type="text" id="fname"
+                    name="name" [(ngModel)] = "myEmployee.name"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-contorl">Email</label>
+                    <input class="form-control" type="text" id="email"
+                    name="email" [(ngModel)] = "myEmployee.email"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-contorl">Password</label>
+                    <input class="form-control" type="text" id="password"
+                    name="password" [(ngModel)] = "myEmployee.password"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-contorl">Phone</label>
+                    <input class="form-control" type="text" id="phone"
+                    name="phone" [(ngModel)] = "myEmployee.phone"/>
+                </div>
+                <button class="btn btn-success" type="submit">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

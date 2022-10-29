@@ -19,4 +19,15 @@ export class OrderService {
         return this.http.get<any[]>(`${this.OrderUrl}?email=${email}`)
     }
 
+    updateOrder(id:string,status:string,date:string,bank:string):Observable<any[]>{
+        let oid = id.split('_')[1];
+        let data={
+            status,
+            date,
+            bank
+        }
+
+        return this.http.patch<any[]>(`${this.OrderUrl}/${oid}`, data)
+    }
+
 }

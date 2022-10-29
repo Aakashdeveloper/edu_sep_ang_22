@@ -23,11 +23,13 @@ export class PlaceOrderComponent{
         private detailService:DetailService,
         private orderService:OrderService) { }
 
-    name = 'Kritika'
-    email = 'kritika@gmail.com';
-    phone = 9876545675
+    userInfo:string|null= sessionStorage.getItem('userResponse');
+
+    name = this.userInfo?this.userInfo.split(',')[1]:""
+    email = this.userInfo?this.userInfo.split(',')[2]:""
+    phone = this.userInfo?this.userInfo.split(',')[3]:""
     
-    myOrder = new IOrder(this.name,this.email,'Hno 76 Delhi West',this.phone,this.price,this.orderid,this.prodName)
+    myOrder = new IOrder(this.name,this.email,'Hno 76 Delhi West',Number(this.phone),this.price,this.orderid,this.prodName)
 
     ngOnInit(): void {
             this.catName = this.route.snapshot.params['catName'];

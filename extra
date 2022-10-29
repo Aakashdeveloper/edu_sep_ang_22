@@ -4,6 +4,13 @@ https://git-scm.com/downloads (Install)
 https://nodejs.org/en/ (Install)
 https://github.com/Aakashdeveloper/ (Follow)
 
+extensions
+Vscode-icon
+spellCheck
+tabnine
+githistory
+gitlens
+
 
 HTML CSS JAVASCRIPT
 
@@ -290,7 +297,6 @@ https://github.com/Aakashdeveloper/angular-lazyloading
 
 
 
-
 (get) cityname >           https://zomatoajulypi.herokuapp.com/location
 (get) restwrtcity >        https://zomatoajulypi.herokuapp.com/restaurant?stateId=1
 (get) quickSearch>         https://zomatoajulypi.herokuapp.com/quicksearch
@@ -310,3 +316,30 @@ https://github.com/Aakashdeveloper/angular-lazyloading
 (get) allorder>            
        
 (get) restaurants>         https://zomatoajulypi.herokuapp.com/restaurants
+https://developerpayment.herokuapp.com/paynow
+
+
+var a = "123Delhi456"
+var b = "Delhi123"
+
+parseInt(a)
+123
+parseInt(b)
+NaN
+
+
+Number(a)
+NaN
+Number(b)
+NaN
+
+var a = "TEST_18532"
+undefined
+a.split('_')
+(2) ['TEST', '18532']
+a.split('_')[1]
+'18532'
+
+//////Step to create build
+> go inside folder using cmd
+> npm run build
