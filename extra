@@ -26,12 +26,13 @@ Ang Material
 
 Deployment
 > Github
-> Jenkins
-> AWS
 > Heroku
 > Netlify
 > Angular over node server
 > Angular over python server
+
+> Jenkins
+> AWS
 > Docker 
 > nginx
 
@@ -301,7 +302,6 @@ https://github.com/Aakashdeveloper/angular-lazyloading
 (get) restwrtcity >        https://zomatoajulypi.herokuapp.com/restaurant?stateId=1
 (get) quickSearch>         https://zomatoajulypi.herokuapp.com/quicksearch
 
-
 (get) onbasisofMeal >      https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id=
 (get) cuisinefilter >      https://zomatoajulypi.herokuapp.com/filter/4?cuisine=1
 (get) costfilter >         https://zomatoajulypi.herokuapp.com/filter/1?hcost=1000&lcost=500
@@ -343,3 +343,8 @@ a.split('_')[1]
 //////Step to create build
 > go inside folder using cmd
 > npm run build
+
+
+docker build . -t anglive
+
+docker run -p 8700:4200 anglive

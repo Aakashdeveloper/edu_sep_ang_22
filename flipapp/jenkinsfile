@@ -1,0 +1,22 @@
+pipeline{
+    agent Any
+    tools {nodejs "NodeJS"}
+    stages{
+        stage("Install"){
+            steps{
+                sh "npm install"
+            }
+        }
+        stage("Build"){
+            steps{
+                sh "npm run build"
+            }
+        }
+        stage("Deploy"){
+            steps{
+                sh "rm -rf /usr/local/var/www/flipkart/dist"
+                sh "cp -R /Users/aakash/.jenkins/workspace/flipkartbuild/dist /usr/local/var/www/flipkart/dist"
+            }
+        }
+    }
+}
